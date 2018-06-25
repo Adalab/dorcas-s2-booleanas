@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+.header__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__container-logo {
+  margin-top: 94px;
+}
+
+.header__logo {
+  width: 250px;
+}
+
+.container__main-tittle {
+  width: 223px;
+}
+
+.main__tittle {
+  color: #e17334;
+=======
 .button-adalab__img {
   height: 40px;
   width: 103px;
@@ -52,6 +77,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+>>>>>>> c8171a69d78eb828af7c94d028cba10cd2aa14c4
 }
 
 /*# sourceMappingURL=main.css.map */

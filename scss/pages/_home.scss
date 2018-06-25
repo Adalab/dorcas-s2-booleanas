@@ -1,6 +1,22 @@
-.wrapper-body {
-  width: 100%;
-  background-color: $gray;
-  display: flex;
-  flex-grow: 1;
+.header__page{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__container-logo{
+    margin-top: 94px;
+}
+
+.header__logo{
+    
+    width: 250px;
+} 
+
+.container__main-tittle{
+    width: 223px;
+}
+.main__tittle{
+
+    color: $color-primary;
 }
