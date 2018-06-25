@@ -1,29 +1,4 @@
-<<<<<<< HEAD
-.header__page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.header__container-logo {
-  margin-top: 94px;
-}
-
-.header__logo {
-  width: 250px;
-}
-
-.container__main-tittle {
-  width: 223px;
-}
-
-.main__tittle {
-  color: #e17334;
-=======
-.button-adalab__img {
+@charset "UTF-8";/* VARIABLES TIPOGRAFÍA *//* Tamaños *//* Familias *//* Grosor */.button-adalab__img {
   height: 40px;
   width: 103px;
   margin-top: 10px;
@@ -50,15 +25,65 @@
   align-items: center;
 }
 
-.wrapper-body {
-  width: 100%;
-  background-color: #f5f5f5;
+.header__page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__container-logo {
+  margin-top: 94px;
+  margin-bottom: 35.4px;
+}
+
+.header__logo {
+  width: 250px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main__tittle {
+  color: #e17334;
+  font-size: 19.2px;
+  font-weight: 900;
+  font-family: Merriweather;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.main__subtittle {
+  width: 264.8px;
+  height: 38.4px;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 13.8px;
 }
 
 * {
@@ -77,7 +102,21 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
->>>>>>> c8171a69d78eb828af7c94d028cba10cd2aa14c4
+}
+
+@media all and (min-width: 768px) {
+  .header__container-logo {
+    margin-top: 348px;
+    margin-bottom: 31px;
+  }
+
+  .header__logo {
+    width: 419px;
+  }
+
+  .main__tittle {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
