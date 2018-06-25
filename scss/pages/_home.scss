@@ -3,8 +3,22 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .header__container-logo {
   margin-top: 94px;
+=======
+.header__container-logo{
+    margin-top: 94px;
+    margin-bottom: 35.4px;
+}
+
+@media all and (min-width: 768px){
+
+    .header__container-logo{
+        margin-top: 348px;
+        margin-bottom: 31px;
+    }
+>>>>>>> 917d53691fa7c23c793cb8d20ac474eb55fb0376
 }
 
 .header__logo {
@@ -29,6 +43,7 @@
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .list__element {
   display: flex;
   flex-direction: column;
@@ -40,4 +55,57 @@
 .list__element-icon {
   color: $color-primary;
   font-size: 28px;
+=======
+@media all and (min-width: 768px) {
+
+    .header__logo{
+    
+        width: 419px;
+    } 
 }
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main__tittle{
+
+    color: $color-primary;
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-thicker;
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+@media all and (min-width: 768px) {
+
+    .main__tittle{
+        font-size: $font-size-xxlarge;
+        
+    }
+>>>>>>> 917d53691fa7c23c793cb8d20ac474eb55fb0376
+}
+.main__subtittle{
+    width: 264.8px;
+  height: 38.4px;
+  font-family: OpenSans;
+  font-size: $font-size-xxsmall;
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 13.8px;
+}
+
+@media all and (min-width: 768px){}
