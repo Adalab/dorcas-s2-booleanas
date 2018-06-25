@@ -25,6 +25,23 @@
   align-items: center;
 }
 
+.footer__span {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #6b6b6b;
+}
+
+.page__wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .header__page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +101,7 @@
   letter-spacing: normal;
   text-align: center;
   margin-bottom: 13.8px;
+  color: #114e4e;
 }
 
 * {
@@ -116,6 +134,10 @@ body {
 
   .main__tittle {
     font-size: 24px;
+  }
+
+  .main__subtittle {
+    font-size: 16px;
   }
 }
 
