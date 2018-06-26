@@ -44,6 +44,7 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .page__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +57,23 @@
   -ms-flex-positive: 1;
   flex-grow: 1;
   background-color: #f5f5f5;
+=======
+.footer__span {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #6b6b6b;
+}
+
+.page__wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+>>>>>>> a31919e97e717c6f12aee9f3e30bd2be93197e27
 }
 
 .header__page {
@@ -121,6 +139,7 @@
   letter-spacing: normal;
   text-align: center;
   margin-bottom: 13.8px;
+  color: #114e4e;
 }
 
 .list {
@@ -185,6 +204,10 @@ body {
 
   .main__tittle {
     font-size: 24px;
+  }
+
+  .main__subtittle {
+    font-size: 16px;
   }
 }
 
