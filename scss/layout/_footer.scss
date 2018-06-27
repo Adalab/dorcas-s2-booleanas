@@ -1,18 +1,16 @@
-.footer{
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-light-medium-light;
 }
 
-.footer__span{
-    font-family: OpenSans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: $color-light-ultra-light;
+.footer__span {
+  font-family: $font-family-primary;
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+  color: $color-light-ultra-light;
+  opacity: 0.5;
 }

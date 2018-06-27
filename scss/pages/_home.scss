@@ -19,16 +19,6 @@
   width: 250px;
 }
 
-.main__tittle {
-  color: $color-primary;
-}
-
-@media all and (min-width: 768px) {
-  .header__logo {
-    width: 419px;
-  }
-}
-
 .main {
   display: flex;
   justify-content: center;
@@ -36,37 +26,23 @@
   align-items: center;
 }
 
-.main__tittle {
+.main__title {
   color: $color-primary;
   font-size: $font-size-xlarge;
   font-weight: $font-weight-thicker;
   font-family: $font-family-secondary;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   margin-bottom: 4px;
 }
 
-@media all and (min-width: 768px) {
-  .main__tittle{
-    font-size: $font-size-xxlarge;
-  }
-}
-
-.main__subtittle {
-  width: 264.8px;
-  height: 38.4px;
-  font-family: OpenSans;
-  font-size: $font-size-xxsmall;
+.main__subtitle {
+  width: 265px;
+  font-family: $font-family-primary;
+  font-size: $font-size-xsmall;
   font-weight: $font-weight-light;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  color: $color-tertiary;
   text-align: center;
-  margin-bottom: 13.8px;
+  margin-bottom: 14px;
 }
 
 .list {
@@ -86,10 +62,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: $font-size-medium;
+  color: $color-medium;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-light;
 }
 
 .list__element-icon {
   color: $color-primary;
   font-size: 28px;
+  margin-bottom: 6px;
+}
+
+@media all and (min-width: 768px) {
+  .header__logo {
+    width: 419px;
+  }
 }
