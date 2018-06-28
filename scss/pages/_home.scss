@@ -1,6 +1,6 @@
 .page__wrapper {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   background-color: $color-light-medium;
   padding-bottom: 30px;
@@ -21,7 +21,6 @@
 }
 
 .main {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -81,28 +80,29 @@
     width: 419px;
   }
 
-  .main__title{
+  .main__title {
     font-size: $font-size-xxlarge;
   }
 
-  .main__subtitle{
+  .main__subtitle {
     font-size: $font-size-medium;
     width: 331px;
     margin-bottom: 21px;
   }
 
-  .list{
+  .list {
     width: 325px;
     padding-top: 15px;
     padding-bottom: 16px;
     margin-bottom: 186px;
   }
+
   .page__wrapper {
     padding-bottom: 60px;
   }
+
   .header__container-logo {
     margin-top: 348px;
     margin-bottom: 31px;
   }
-
 }
