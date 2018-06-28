@@ -3,26 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title></title>
+
   </head>
   <body>
+    <header class="header--tarjeta">
+      <img class="header__logo--tarjeta" src="images/awesome-p-c.svg" alt="Logotipo">
+    </header>
+
     <section class="section--top">
-      <button type="button" name="button">RESET</button>
+      <button class= "button" type="button" name="button">
+        <i class="far fa-trash-alt button__icon"></i>
+        <span>RESET</span>
+      </button>
+
       <div class="section--top__card">
         <span class="card__title">Nombre Apellido</span>
         <span class="card__subtitle">Front-end developer</span>
-        <img src="" alt="foto">
+        <img class="photo" src="https://picsum.photos/240/200" alt="foto">
+
         <ul class="card__media">
-          <li class="card__media-icon"></li>
-          <li class="card__media-icon"></li>
-          <li class="card__media-icon"></li>
-          <li class="card__media-icon"></li>
+          <li class="card__media-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </li>
+          <li class="card__media-icon">
+            <i class="far fa-envelope"></i>
+          </li>
+          <li class="card__media-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </li>
+          <li class="card__media-icon">
+            <i class="fab fa-github-alt"></i>
+          </li>
         </ul>
+
+        <hr class="line">
+
         <ul class="card__skills">
-          <li class="card__skills-icon"></li>
-          <li class="card__skills-icon"></li>
-          <li class="card__skills-icon"></li>
+          <li class="card__skills-icon">
+            <span class="icon__text">HTML</span>
+          </li>
+          <li class="card__skills-icon">
+            <span class="icon__text">CSS</span>
+          </li>
+          <li class="card__skills-icon">
+            <span class="icon__text">GULP</span>
+          </li>
         </ul>
       </div>
 
