@@ -1,3 +1,21 @@
+.button-start {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 129px;
+  height: 42px;
+  border: 1px solid $color-border;
+  border-radius: 21px;
+  background-color: $color-secundary;
+  color: $color-light;
+  text-transform: uppercase;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-medium;
+}
+
 .button-adalab__img {
   height: 40px;
   width: 103px;

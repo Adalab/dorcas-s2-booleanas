@@ -4,4 +4,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid $color-light-medium-light;
+}
+
+.footer__span {
+  font-family: $font-family-primary;
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+  color: $color-light-ultra-light;
+  opacity: 0.5;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
 }
