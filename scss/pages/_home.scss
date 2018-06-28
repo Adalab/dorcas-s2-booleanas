@@ -43,7 +43,7 @@
     align-items: center;
 }
 
-.main__tittle {
+.main__title {
 
     color: $color-primary;
     font-size: $font-size-xlarge;
@@ -59,12 +59,12 @@
 
 @media all and (min-width: 768px) {
 
-    .main__tittle {
+    .main__title {
         font-size: $font-size-xxlarge;
 
     }
 }
-.main__subtittle {
+.main__subtitle {
     width: 264.8px;
     height: 38.4px;
     font-family: OpenSans;
@@ -80,7 +80,7 @@
 }
 
 @media all and (min-width: 768px) {
-    .main__subtittle {
+    .main__subtitle {
         font-size: $font-size-medium;
     }
 }

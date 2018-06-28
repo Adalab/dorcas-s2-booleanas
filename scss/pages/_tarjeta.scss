@@ -1,0 +1,147 @@
+//parte raquel
+.container__colors-fonts{
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $color-light-medium-light;
+}
+.title__section-desing-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.title__section-desing-title{
+    font-family: $font-family-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color:$color-medium;
+}
+
+.icon-ungroup-desing{
+    font-size: $font-size-large;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-primary;
+}
+
+.icon-chevron-up-desing{
+    font-size: $font-size-large;
+
+  color:$color-medium;
+}
+
+.form__container-radio{
+    margin-left: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+.input__design{
+    display: flex;
+    flex-direction: column;
+}
+
+.block{
+
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 113px;
+}
+.first-block{
+    margin-top: 0;
+}
+.paleta__primary{
+
+    display: flex;
+    margin-left: 10px;
+}
+
+.color{
+    width: 30px;
+    height: 25px;
+    background-color: black;
+}
+.color__paleta-primary1{
+    background-color: $color-tertiary;
+}
+.color__paleta-primary2{
+    background-color: $color-secundary;
+}
+.color__paleta-primary3{
+    background-color: $color-light-medium-dark;
+}
+
+.color__paleta-secondary1{
+    background-color: $color-dark-medium;
+}
+.color__paleta-secondary2{
+    background-color: $color-dark-light;
+}
+.color__paleta-secondary3{
+    background-color: $color-primary;
+}
+
+.color__paleta-tertiary1{
+    background-color: $color-medium-light;
+}
+.color__paleta-tertiary2{
+    background-color: $color-light-light;   
+}
+.color__paleta-tertiary3{
+    background-color: $color-light-dark;
+}
+
+.top-container-radiofont{
+    margin-top: 36px;
+}
+
+.label-block{
+  text-transform: uppercase;
+  font-family: $font-family-primary;
+  font-size: $font-size-small   ;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.font__style-font1{
+  font-family: $font-family-primary;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal
+}
+.font__style-font2{
+    font-family: $font-family-design1;
+  font-size: $font-size-medium;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.font__style-font3{
+    font-family: $font-family-secondary;
+  font-size: $font-size-medium;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+//fin parte raquel
