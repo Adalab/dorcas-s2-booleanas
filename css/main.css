@@ -70,18 +70,193 @@
   opacity: 0.5;
 }
 
-.header--tarjeta {
+.container__colors-fonts {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-top: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.title__section-desing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.title__section-desing-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #54585a;
+}
+
+.icon-ungroup-desing {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #e17334;
+}
+
+.icon-chevron-up-desing {
+  font-size: 18px;
+  color: #54585a;
+}
+
+.form__container-radio {
+  margin-left: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.input__design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 113px;
+  position: relative;
+}
+
+.first-block {
+  margin-top: 0;
+}
+
+.radio__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.color {
+  width: 30px;
+  height: 25px;
+  background-color: black;
+}
+
+.color__paleta-primary1 {
+  background-color: #114e4e;
+}
+
+.color__paleta-primary2 {
+  background-color: #438792;
+}
+
+.color__paleta-primary3 {
+  background-color: #a2deaf;
+}
+
+.color__paleta-secondary1 {
+  background-color: #420101;
+}
+
+.color__paleta-secondary2 {
+  background-color: #bd1010;
+}
+
+.color__paleta-secondary3 {
+  background-color: #e17334;
+}
+
+.color__paleta-tertiary1 {
+  background-color: #3e5b65;
+}
+
+.color__paleta-tertiary2 {
+  background-color: #dfe5eb;
+}
+
+.color__paleta-tertiary3 {
+  background-color: #a0c0cf;
+}
+
+.top-container-radiofont {
+  margin-top: 36px;
+}
+
+.label-block {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.font__style-font1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.font__style-font2 {
+  font-family: "Indie Flower", "cursive";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.font__style-font3 {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}/* HEADER */.header--tarjeta {
   padding: 30px 79px 30px 40px;
 }
 
 .header__logo--tarjeta {
   width: 201px;
   height: 51px;
-}
-
-.section--top {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
-  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}/* SECCIÓN FOTO */.section--top {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bcfff7), to(#ffd6f9));
+  background: linear-gradient(to bottom, #bcfff7, #ffd6f9);
   width: vw;
   padding: 10px 35px 30px 45px;
 }
@@ -112,14 +287,14 @@
   display: block;
   font-size: 18px;
   color: #114e4e;
-  font-family: "ComicSansMS";
+  font-family: "Indie Flower", "cursive";
   font-weight: bold;
   margin: 20px 14px 5px 20px;
 }
 
 .card__subtitle {
   display: block;
-  font-family: "ComicSansMS";
+  font-family: "Indie Flower", "cursive";
   color: #54585a;
   font-size: 16px;
   font-weight: normal;
@@ -188,6 +363,22 @@
   font-weight: normal;
   line-height: normal;
   padding: 0 5px;
+}
+/* FORMULARIO */.form2__title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+
+.form2__title-icon {
+  color: #e17334;
+}
+
+.button--arrow__icon {
+  display: block;
+  color: #54585a;
+  width: 16px;
+  height: 18px;
 }
 
 .section--stuffed {
