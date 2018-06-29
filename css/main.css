@@ -230,21 +230,18 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-}
-
-.header--tarjeta {
+}/* HEADER */.header--tarjeta {
   padding: 30px 79px 30px 40px;
 }
 
 .header__logo--tarjeta {
   width: 201px;
   height: 51px;
-}
-
-.section--top {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
-  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}/* SECCIÓN FOTO */.section--top {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bcfff7), to(#ffd6f9));
+  background: linear-gradient(to bottom, #bcfff7, #ffd6f9);
   width: vw;
+  padding: 10px 35px 30px 45px;
 }
 
 .button {
@@ -349,6 +346,21 @@
   font-weight: normal;
   line-height: normal;
   padding: 0 5px;
+}/* FORMULARIO */.form2__title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+
+.form2__title-icon {
+  color: #e17334;
+}
+
+.button--arrow__icon {
+  display: block;
+  color: #54585a;
+  width: 16px;
+  height: 18px;
 }
 
 .page__wrapper {
