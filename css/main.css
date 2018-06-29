@@ -63,6 +63,10 @@
   margin: 0 auto;
   padding-bottom: 30px;
   border-bottom: 1px solid #d8d8d8;
+  padding-top: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .title__section-desing-container {
@@ -132,13 +136,14 @@
   -ms-flex-align: center;
   align-items: center;
   width: 113px;
+  position: relative;
 }
 
 .first-block {
   margin-top: 0;
 }
 
-.paleta__primary {
+.radio__options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +218,7 @@
 }
 
 .font__style-font2 {
-  font-family: "ComicSansMS";
+  font-family: "Indie Flower", "cursive";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -270,14 +275,14 @@
   display: block;
   font-size: 18px;
   color: #114e4e;
-  font-family: "ComicSansMS";
+  font-family: "Indie Flower", "cursive";
   font-weight: bold;
   margin: 20px 14px 5px 20px;
 }
 
 .card__subtitle {
   display: block;
-  font-family: "ComicSansMS";
+  font-family: "Indie Flower", "cursive";
   color: #54585a;
   font-size: 16px;
   font-weight: normal;

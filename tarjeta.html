@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title></title>
 
@@ -59,41 +60,43 @@
       </div>
 
     </section>
-
-      <div class="container__colors-fonts">
-      <div class="title__section-desing-container">
+    <form class="form" action="">
+      <fieldset class="container__colors-fonts" >
+        <div class="title__section-desing-container">
         <div class="title__section-title">
-            <h1 class="title__section-desing-title"><span><i class="far fa-object-ungroup icon-ungroup-desing"></i></span> diseña</h1>
+            <legend class="title__section-desing-title"><span><i class="far fa-object-ungroup icon-ungroup-desing"></i></span> diseña</legend>
         </div>
         <div class="title__section-icon">
             <i class="fas fa-chevron-up icon-chevron-up-desing"></i>
         </div>
-      </div>
-      <form class="form" action="">
+    </div>
         <div class="form__container-radio">
           <div class="label__design">
               <label class="label-block" for="">colores</label>
           </div>
             <div class="input__design">
               <div class="block first-block">
-                <input type="radio">
-                <div class="paleta__primary">
+                <input class="radio" type="radio">
+                <span class="checkmark"></span>
+                <div class="radio__options">
                   <div class="color color__paleta-primary1"></div>
                   <div class="color color__paleta-primary2"></div>
                   <div class="color color__paleta-primary3"></div>
                 </div>
               </div>  
               <div class="block">
-                <input type="radio">
-                <div class="paleta__primary">
+                <input class="radio" type="radio">
+                <span class="checkmark"></span>
+                <div class="radio__options">
                   <div class="color color__paleta-secondary1"></div>
                   <div class="color color__paleta-secondary2"></div>
                   <div class="color color__paleta-secondary3"></div>
                 </div>
               </div>
               <div class="block">
-                  <input type="radio">
-                  <div class="paleta__primary">
+                  <input class="radio" type="radio">
+                  <span class="checkmark"></span>
+                  <div class="radio__options">
                     <div class="color color__paleta-tertiary1"></div>
                     <div class="color color__paleta-tertiary2"></div>
                     <div class="color color__paleta-tertiary3"></div>
@@ -107,26 +110,29 @@
           </div>
             <div class="input__design">
               <div class="block first-block">
-                <input type="radio">
-                <div class="paleta__primary">
+                <input class="radio" type="radio">
+                <span class="checkmark"></span>
+                <div class="radio__options">
                   <div class="font__style-font1">ubuntu</div>
                 </div>
               </div>
               <div class="block">
-                <input type="radio">
-                <div class="paleta__primary">
+                <input class="radio" type="radio">
+                <span class="checkmark"></span>
+                <div class="radio__options">
                   <div class="font__style-font2">comic sans</div>
                 </div>
               </div>  
               <div class="block">
-                <input type="radio">
-                <div class="paleta__primary">
+                <input class="radio" type="radio">
+                <span class="checkmark"></span>
+                <div class="radio__options">
                   <div class="font__style-font3">montserrat</div>
                 </div>
               </div>    
           </div>
         </div>
-      </div>
+      </fieldset>
       </form>
 
     <section class="section--bottom">
@@ -149,7 +155,10 @@
         </button>
 
       </fieldset>
-    
+      <footer class="footer">
+        <span class="footer__span">Awesome profile-cards @2018</span>
+        <a href="#" class="button-adalab"> <img src="images/logo-adalab.png" alt="enlace a adalab" class="button-adalab__img"> </a>
+      </footer>
 
   </body>
 </html>

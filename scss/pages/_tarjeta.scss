@@ -4,6 +4,10 @@
     margin: 0 auto;
     padding-bottom: 30px;
     border-bottom: 1px solid $color-light-medium-light;
+    padding-top: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 .title__section-desing-container{
     display: flex;
@@ -56,15 +60,22 @@
     margin-bottom: 10px;
     align-items: center;
     width: 113px;
+    position: relative;
 }
+
+
+
+
 .first-block{
     margin-top: 0;
 }
-.paleta__primary{
+.radio__options{
 
     display: flex;
     margin-left: 10px;
 }
+
+
 
 .color{
     width: 30px;
