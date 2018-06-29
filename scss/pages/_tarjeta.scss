@@ -10,7 +10,7 @@
 .section--top {
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);//añadir variables
   width: vw;
-  // padding: 10px 35px 30px 45px;
+  padding: 10px 35px 30px 45px;
 }
 
 .button {
@@ -104,4 +104,78 @@
   font-weight: $font-weight-light;
   line-height: normal;
   padding: 0 5px;
+}
+
+.section--stuffed {
+  width: 280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form__subtitle {
+  text-transform: uppercase;
+  font-size: $font-size-large;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-medium;
+  color: $color-medium;
+  margin-bottom: 25px;
+  width: 280px;
+  margin-top: 10px;
+}
+
+.section-stuffed__icon {
+  color: $color-primary;
+  font-size: $font-size-large;
+  margin-right: 10px;
+  font-weight: $font-weight-light;
+}
+
+.section-stuffed__arrow {
+  margin-left: 155px;
+  font-size: $font-size-large;
+}
+
+.subsection--stuffed {
+  width: 281px;
+  margin: auto;
+  border: none;
+  border-bottom: solid black 1px;
+  display: flex;
+}
+
+.input--stuffed {
+  width: 280px;
+  height: 30px;
+  border: 1px solid $color-light-medium-dark;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.div--stuffed__img {
+  display: flex;
+  width: 280px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.input--stuffed__img {
+  width: 140px;
+  height: 30px;
+  background-color: $color-primary;
+  color: $color-light;
+  border-radius: 3px;
+  font-size: $font-size-small;
+  font-family: $font-family-primary;
+  border: none;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  margin-right: 20px;
+}
+
+.box--previmg {
+  width: 30px;
+  height: 30px;
+  border: solid $color-light-medium-dark 1px;
 }

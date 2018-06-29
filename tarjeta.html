@@ -61,12 +61,49 @@
 
     </section>
 
-<h2><i class="far fa-keyboard list__element-icon"></i>rellena</h2>
-    <fieldset class="section--stuffed">
-        <!-- <h2><i class="far fa-keyboard list__element-icon"></i>rellena</h2> -->
+<section class="section--stuffed">
+<h2 class="form__subtitle"><i class="far fa-keyboard section-stuffed__icon"></i>rellena<i class="fas fa-chevron-up section-stuffed__arrow"></i></h2>
+    <fieldset class="subsection--stuffed">
+
+      <label class="label--stuffed" for="complete--name">Nombre completo</label>
+      <input class="input--stuffed" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
+
+      <label class="label--stuffed" for="job">Puesto</label>
+      <input class="input--stuffed" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" value="">
+
+      <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
+      <div class="div--stuffed__img">
+
+      <input class="input--stuffed__img" id="img--profile" type="submit" name="img--profile" value="Añadir imagen">
+      <div class="box--previmg"></div>
+      </div>
+
+      <label class="label--stuffed" for="email">Email</label>
+      <input class="input--stuffed" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" value="">
+
+      <label class="label--stuffed" for="tlf">Teléfono</label>
+      <input class="input--stuffed" placeholder="Ej:555-555-555" id="tlf" type="tel" name="tlf" value="">
+
+      <label class="label--stuffed" for="lkd">Linkedin</label>
+      <input class="input--stuffed" placeholder="Ej: linkedin.com/in/sally.hill" id="lkd" type="text" name="lkd" value="">
+
+      <label class="label--stuffed" for="gith">Github</label>
+      <input class="input--stuffed" placeholder="Ej: @sally-hill" id="gith" type="text" name="gith" value="">
+
+      <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
+      <select id="skills1" name="skills1">
+        <option value="html">html</option>
+      </select>
+      <button class="button-minus" type="button" name="button">-</button>
+
+      <label class="label--stuffed" for="skills2"></label>
+      <select id="skills2" name="skills2">
+        <option value="css">css</option>
+      </select>
+      <button class="button-plus" type="button" name="button">+</button>
 
       </fieldset>
-
+    </section>
     </section>
 
   </body>
