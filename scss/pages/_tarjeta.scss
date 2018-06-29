@@ -112,19 +112,41 @@
 
 /* FORMULARIO */
 
+.form2--stuffed {
+  border: 0;
+}
+
+.form2__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 20px;
+}
+
+.form2__wrapper2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .form2__title {
   font-size: $font-size-large;
   font-family: $font-family-primary;
   color: $color-medium;
 }
 
-.form2__title-icon {
+.form2__title--icon {
   color: $color-primary;
+  margin-right: 12px;
 }
 
-.button--arrow__icon {
-  display: block;
+.arrow--icon {
   color: $color-medium;
-  width: 16px;
-  height: 18px;
+  font-size: $font-size-large;
+}
+
+.form2__button {
+  background-color: $color-primary;
 }
