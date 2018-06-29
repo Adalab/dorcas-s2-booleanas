@@ -1,5 +1,5 @@
 //colores
-$color-primary:  #e17334;
+$color-primary: #e17334;
 $color-secundary: #438792;
 $color-tertiary: #114e4e;
 $color-dark: #000;
@@ -15,6 +15,7 @@ $color-light-medium-light:#d8d8d8;
 $color-light-dark:#a0c0cf;
 $color-light-medium-dark:#a2deaf;
 $blue-twitter: #00a0f5;
+$color-border: #979797;
 
 
 /* VARIABLES TIPOGRAFÍA */
@@ -25,14 +26,15 @@ $font-size-xsmall: 13px;
 $font-size-small: 14px;
 $font-size-medium: 16px;
 $font-size-large: 18px;
-$font-size-xlarge: 19.2px;
+$font-size-xlarge: 20px;
 $font-size-xxlarge: 24px;
 
 /* Familias */
-$font-family-primary: OpenSans;
-$font-family-secondary: Merriweather;
-$font-family-design1: ComicSansMS;
-$font-family-design2: Montserrat;
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Merriweather', serif;
+$font-family-design1: 'ComicSansMS';
+$font-family-design2: 'Montserrat', sans-serif;
+$font-family-design3: 'Ubuntu', sans-serif;
 
 /* Grosor */
 $font-weight-light: normal;
