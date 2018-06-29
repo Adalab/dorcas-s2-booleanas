@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header--tarjeta {
   padding: 30px 79px 30px 40px;
 }
@@ -7,10 +9,12 @@
   height: 51px;
 }
 
+/* SECCIÓN FOTO */
+
 .section--top {
-  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);//añadir variables
+  background: linear-gradient(to bottom, #bcfff7, #ffd6f9);//añadir variables
   width: vw;
-  // padding: 10px 35px 30px 45px;
+  padding: 10px 35px 30px 45px;
 }
 
 .button {
@@ -104,4 +108,23 @@
   font-weight: $font-weight-light;
   line-height: normal;
   padding: 0 5px;
+}
+
+/* FORMULARIO */
+
+.form2__title {
+  font-size: $font-size-large;
+  font-family: $font-family-primary;
+  color: $color-medium;
+}
+
+.form2__title-icon {
+  color: $color-primary;
+}
+
+.button--arrow__icon {
+  display: block;
+  color: $color-medium;
+  width: 16px;
+  height: 18px;
 }
