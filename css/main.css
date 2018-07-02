@@ -28,16 +28,23 @@
   margin-top: 10px;
 }
 
-.button-minus {
+.button--stuffed {
   width: 30px;
   height: 30px;
   border-radius: 15px;
-}
-
-.button-plus {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  background: #fff;
+  border: 1px solid #e17334;
+  color: #e17334;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer__span {
@@ -410,10 +417,11 @@
   width: 281px;
   margin: auto;
   border: none;
-  border-bottom: solid black 1px;
+  border-bottom: solid #d8d8d8 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .input-stuffed {
@@ -422,6 +430,15 @@
   border: 1px solid #a2deaf;
   margin-bottom: 20px;
   margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-left: 9px;
+}
+
+.label--stuffed {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #114e4e;
 }
 
 .div-stuffed__img {
@@ -451,6 +468,33 @@
   width: 30px;
   height: 30px;
   border: solid #a2deaf 1px;
+}
+
+.container__skills--stuffed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__skills1 {
+  margin-top: 5px;
+  margin-bottom: 21px;
+}
+
+.container__skills2 {
+  margin-bottom: 30px;
+}
+
+.skills--stuffed {
+  width: 165px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #a2deaf;
+  margin-right: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 5px;
 }/* FORMULARIO */.form2--stuffed {
   border: 0;
 }
