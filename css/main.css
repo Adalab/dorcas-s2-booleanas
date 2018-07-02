@@ -243,8 +243,8 @@
   width: 201px;
   height: 51px;
 }/* SECCIÓN FOTO */.section--top {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bcfff7), to(#ffd6f9));
-  background: linear-gradient(to bottom, #bcfff7, #ffd6f9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd0042), to(#ffd6f9));
+  background: linear-gradient(to bottom, #dd0042, #ffd6f9);
   width: vw;
   padding: 10px 35px 30px 45px;
 }
