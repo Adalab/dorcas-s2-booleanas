@@ -363,59 +363,6 @@
   font-weight: normal;
   line-height: normal;
   padding: 0 5px;
-}/* FORMULARIO */.form2--stuffed {
-  border: 0;
-}
-
-.form2__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-left: 23px;
-  padding-right: 20px;
-}
-
-.form2__wrapper2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.form2__title {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  color: #54585a;
-}
-
-.form2__title--icon {
-  color: #e17334;
-  margin-right: 12px;
-}
-
-.arrow--icon {
-  color: #54585a;
-  font-size: 18px;
-}
-
-.form2__button {
-  background-color: #e17334;
 }
 
 .section--stuffed {
@@ -504,6 +451,61 @@
   width: 30px;
   height: 30px;
   border: solid #a2deaf 1px;
+}/* FORMULARIO */.form2--stuffed {
+  border: 0;
+}
+
+.form2__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 20px;
+}
+
+.form2__wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form2__title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+
+.form2__title--icon {
+  color: #e17334;
+  margin-right: 12px;
+}
+
+.arrow--icon {
+  color: #54585a;
+  width: 16px;
+  height: 18px;
+  font-size: 18px;
+}
+
+.form2__button {
+  background-color: #e17334;
 }
 
 .page__wrapper {
