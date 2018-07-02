@@ -1,4 +1,4 @@
-@charset "UTF-8";/* VARIABLES TIPOGRAFÍA *//* Tamaños *//* Familias *//* Grosor */.button-start {
+@charset "UTF-8";/* VARIABLES TIPOGRAFÍA *//* Tamaños *//* Familias *//* Grosor */.button--start {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +22,7 @@
   font-size: 16px;
 }
 
-.button-adalab__img {
+.button--adalab__img {
   height: 40px;
   width: 103px;
   margin-top: 10px;
@@ -372,7 +372,7 @@
   padding: 0 5px;
 }
 
-.section-stuffed {
+.section--stuffed {
   width: 280px;
   margin: auto;
   display: -webkit-box;
@@ -413,7 +413,7 @@
   font-size: 18px;
 }
 
-.subsection-stuffed {
+.subsection--stuffed {
   width: 281px;
   margin: auto;
   border: none;
@@ -424,7 +424,7 @@
   margin-bottom: 10px;
 }
 
-.input-stuffed {
+.input--stuffed {
   width: 280px;
   height: 30px;
   border: 1px solid #a2deaf;
@@ -441,7 +441,7 @@
   color: #114e4e;
 }
 
-.div-stuffed__img {
+.div--stuffed__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +450,7 @@
   margin-top: 5px;
 }
 
-.input-stuffed__img {
+.input--stuffed__img {
   width: 140px;
   height: 30px;
   background-color: #e17334;
@@ -464,7 +464,7 @@
   margin-right: 20px;
 }
 
-.box-previmg {
+.box--previmg {
   width: 30px;
   height: 30px;
   border: solid #a2deaf 1px;
@@ -534,6 +534,7 @@
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
+  text-transform: uppercase;
 }
 
 .form2__title--icon {
@@ -605,7 +606,7 @@
   justify-content: center;
 }
 
-.header__container-logo {
+.header__container--logo {
   margin-top: 94px;
   margin-bottom: 35px;
 }
@@ -684,7 +685,7 @@
   font-weight: normal;
 }
 
-.list__element-icon {
+.list__element--icon {
   color: #e17334;
   font-size: 28px;
   margin-bottom: 6px;

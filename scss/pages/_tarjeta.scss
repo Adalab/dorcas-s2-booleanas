@@ -1,22 +1,24 @@
 //parte raquel
+
 .container__colors-fonts{
-    width: 280px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    border-bottom: 1px solid $color-light-medium-light;
-    padding-top: 20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color-light-medium-light;
+  padding-top: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
+
 .title__section-desing-container{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .title__section-desing-title{
-    font-family: $font-family-primary;
+  font-family: $font-family-primary;
   font-size: $font-size-large;
   font-weight: $font-weight-medium;
   font-style: normal;
@@ -28,7 +30,7 @@
 }
 
 .icon-ungroup-desing{
-    font-size: $font-size-large;
+  font-size: $font-size-large;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -270,7 +272,7 @@
 
 //SECCION RELLENA (eli y valeria)
 
-.section-stuffed {
+.section--stuffed {
   width: 280px;
   margin: auto;
   display: flex;
@@ -302,7 +304,7 @@
   font-size: $font-size-large;
 }
 
-.subsection-stuffed {
+.subsection--stuffed {
   width: 281px;
   margin: auto;
   border: none;
@@ -311,7 +313,7 @@
   margin-bottom: 10px;
 }
 
-.input-stuffed {
+.input--stuffed {
   width: 280px;
   height: 30px;
   border: 1px solid $color-light-medium-dark;
@@ -328,14 +330,14 @@
   color: $color-tertiary;
 }
 
-.div-stuffed__img {
+.div--stuffed__img {
   display: flex;
   width: 280px;
   margin-bottom: 20px;
   margin-top: 5px;
 }
 
-.input-stuffed__img {
+.input--stuffed__img {
   width: 140px;
   height: 30px;
   background-color: $color-primary;
@@ -348,7 +350,7 @@
   margin-right: 20px;
 }
 
-.box-previmg {
+.box--previmg {
   width: 30px;
   height: 30px;
   border: solid $color-light-medium-dark 1px;
@@ -404,6 +406,7 @@
   font-size: $font-size-large;
   font-family: $font-family-primary;
   color: $color-medium;
+  text-transform: uppercase;
 }
 
 .form2__title--icon {
