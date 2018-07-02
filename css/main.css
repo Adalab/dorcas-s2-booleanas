@@ -319,7 +319,7 @@
   margin: 10px 22px 10px 20px;
 }
 
-.card__media-icon {
+.card__media--icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@
   padding: 0 5px;
 }
 
-.section--stuffed {
+.section-stuffed {
   width: 280px;
   margin: auto;
   display: -webkit-box;
@@ -406,7 +406,7 @@
   font-size: 18px;
 }
 
-.subsection--stuffed {
+.subsection-stuffed {
   width: 281px;
   margin: auto;
   border: none;
@@ -416,7 +416,7 @@
   display: flex;
 }
 
-.input--stuffed {
+.input-stuffed {
   width: 280px;
   height: 30px;
   border: 1px solid #a2deaf;
@@ -424,7 +424,7 @@
   margin-top: 5px;
 }
 
-.div--stuffed__img {
+.div-stuffed__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +433,7 @@
   margin-top: 5px;
 }
 
-.input--stuffed__img {
+.input-stuffed__img {
   width: 140px;
   height: 30px;
   background-color: #e17334;
@@ -447,7 +447,7 @@
   margin-right: 20px;
 }
 
-.box--previmg {
+.box-previmg {
   width: 30px;
   height: 30px;
   border: solid #a2deaf 1px;
@@ -504,8 +504,37 @@
   font-size: 18px;
 }
 
+.form2__button--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .form2__button {
   background-color: #e17334;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.button--icon {
+  margin-right: 10px;
+}
+
+.line2 {
+  margin-bottom: 30px;
 }
 
 .page__wrapper {

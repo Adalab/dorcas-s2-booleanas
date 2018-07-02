@@ -228,7 +228,7 @@
   margin: 10px 22px 10px 20px;
 }
 
-.card__media-icon {
+.card__media--icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,7 @@
 }
 
 
-.section--stuffed {
+.section-stuffed {
   width: 280px;
   margin: auto;
   display: flex;
@@ -301,7 +301,7 @@
   font-size: $font-size-large;
 }
 
-.subsection--stuffed {
+.subsection-stuffed {
   width: 281px;
   margin: auto;
   border: none;
@@ -309,7 +309,7 @@
   display: flex;
 }
 
-.input--stuffed {
+.input-stuffed {
   width: 280px;
   height: 30px;
   border: 1px solid $color-light-medium-dark;
@@ -317,14 +317,14 @@
   margin-top: 5px;
 }
 
-.div--stuffed__img {
+.div-stuffed__img {
   display: flex;
   width: 280px;
   margin-bottom: 20px;
   margin-top: 5px;
 }
 
-.input--stuffed__img {
+.input-stuffed__img {
   width: 140px;
   height: 30px;
   background-color: $color-primary;
@@ -337,7 +337,7 @@
   margin-right: 20px;
 }
 
-.box--previmg {
+.box-previmg {
   width: 30px;
   height: 30px;
   border: solid $color-light-medium-dark 1px;
@@ -378,10 +378,32 @@
   color: $color-medium;
   width: 16px;
   height: 18px;
-
   font-size: $font-size-large;
+}
+
+.form2__button--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form2__button {
   background-color: $color-primary;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  color: $color-light;
+  font-size: $font-size-large;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-medium;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.button--icon {
+  margin-right: 10px;
+}
+
+.line2 {
+  margin-bottom: 30px;
 }
