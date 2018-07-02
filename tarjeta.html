@@ -138,13 +138,9 @@
       </fieldset>
       </form>
 
-    <section class="section--bottom">
-    </section>
-
 <section class="section--stuffed">
 <h2 class="form__subtitle"><i class="far fa-keyboard section-stuffed__icon"></i>rellena<i class="fas fa-chevron-up section-stuffed__arrow"></i></h2>
     <fieldset class="subsection--stuffed">
-          <!-- <h2><i class="far fa-keyboard list__element-icon"></i>rellena</h2> -->
 
       <label class="label--stuffed" for="complete--name">Nombre completo</label>
       <input class="input--stuffed" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
@@ -172,19 +168,23 @@
       <input class="input--stuffed" placeholder="Ej: @sally-hill" id="gith" type="text" name="gith" value="">
 
       <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
-      <select id="skills1" name="skills1">
+      <div class="container__skills--stuffed container__skills1">
+      <select class="skills--stuffed" id="skills1" name="skills1">
         <option value="html">html</option>
       </select>
-      <button class="button-minus" type="button" name="button">-</button>
+      <button class="button--stuffed button--stuffed__minus" type="button" name="button"><i class="fas fa-minus minus__stuffed"></i></button>
+      </div>
 
+      <div class="container__skills--stuffed container__skills2">
       <label class="label--stuffed" for="skills2"></label>
-      <select id="skills2" name="skills2">
+      <select class="skills--stuffed" id="skills2" name="skills2">
         <option value="css">css</option>
       </select>
-      <button class="button-plus" type="button" name="button">+</button>
-
+      <button class="button--stuffed button--stuffed__plus" type="button" name="button"><i class="fas fa-plus plus__stuffed"></i></button>
+    </div>
       </fieldset>
     </section>
+
     </section>
       <fieldset class="form2--stuffed">
         <div class="form2__wrapper">
@@ -195,19 +195,19 @@
 
           <i class="fas fa-chevron-up arrow--icon"></i>
         </div>
-
-        <button class="form2__button" type="button" name="button">
-          <i class="far fa-address-card button--icon"></i>
-          CREAR TARJETA
-        </button>
+        <div class="form2__button--container">
+          <button class="form2__button" type="button" name="button">
+            <i class="far fa-address-card button--icon"></i>
+            <span>CREAR TARJETA</span>
+          </button>
+        </div>
 
       </fieldset>
-    </div>
-    </main>
+      <hr class="line2">
       <footer class="footer">
         <span class="footer__span">Awesome profile-cards @2018</span>
         <a href="#" class="button-adalab"> <img src="images/logo-adalab.png" alt="enlace a adalab" class="button-adalab__img"> </a>
       </footer>
-
+</section>
   </body>
 </html>
