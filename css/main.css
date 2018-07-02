@@ -28,6 +28,18 @@
   margin-top: 10px;
 }
 
+.button-minus {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.button-plus {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
 .footer__span {
   font-size: 14px;
 }
@@ -351,6 +363,94 @@
   font-weight: normal;
   line-height: normal;
   padding: 0 5px;
+}
+
+.section--stuffed {
+  width: 280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.form__subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #54585a;
+  margin-bottom: 25px;
+  width: 280px;
+  margin-top: 10px;
+}
+
+.section-stuffed__icon {
+  color: #e17334;
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.section-stuffed__arrow {
+  margin-left: 155px;
+  font-size: 18px;
+}
+
+.subsection--stuffed {
+  width: 281px;
+  margin: auto;
+  border: none;
+  border-bottom: solid black 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input--stuffed {
+  width: 280px;
+  height: 30px;
+  border: 1px solid #a2deaf;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.div--stuffed__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.input--stuffed__img {
+  width: 140px;
+  height: 30px;
+  background-color: #e17334;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  margin-right: 20px;
+}
+
+.box--previmg {
+  width: 30px;
+  height: 30px;
+  border: solid #a2deaf 1px;
 }/* FORMULARIO */.form2--stuffed {
   border: 0;
 }
@@ -399,6 +499,8 @@
 
 .arrow--icon {
   color: #54585a;
+  width: 16px;
+  height: 18px;
   font-size: 18px;
 }
 
