@@ -315,6 +315,14 @@
   border: 1px solid $color-light-medium-dark;
   margin-bottom: 20px;
   margin-top: 5px;
+  font-family: $font-family-primary;
+  font-size: $font-size-small;
+}
+
+.label--stuffed {
+  font-family: $font-family-primary;
+  font-size: $font-size-small;
+  color: $color-tertiary;
 }
 
 .div--stuffed__img {

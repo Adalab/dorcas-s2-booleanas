@@ -422,6 +422,14 @@
   border: 1px solid #a2deaf;
   margin-bottom: 20px;
   margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.label--stuffed {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #114e4e;
 }
 
 .div--stuffed__img {
