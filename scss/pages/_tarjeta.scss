@@ -1,26 +1,25 @@
 //parte raquel
 
-.title__section-desing-container{
-  display: flex;
+.container__colors-fonts{
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
   border-bottom: 1px solid $color-light-medium-light;
   padding-top: 20px;
-  justify-content: space-between;
-
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 0;
 }
-.container__colors-fonts{
-    width: 280px;
-    margin: 0 auto;
-    padding-bottom: 30px;
 
-    justify-content: space-between;
-    margin-bottom: 25px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+.title__section-desing-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .title__section-desing-title{
-    font-family: $font-family-primary;
+  font-family: $font-family-primary;
   font-size: $font-size-large;
   font-weight: $font-weight-medium;
   font-style: normal;
@@ -32,7 +31,7 @@
 }
 
 .icon-ungroup-desing{
-    font-size: $font-size-large;
+  font-size: $font-size-large;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -68,8 +67,6 @@
 }
 
 
-
-
 .first-block{
     margin-top: 0;
 }
@@ -78,8 +75,6 @@
     display: flex;
     margin-left: 10px;
 }
-
-
 
 .color{
     width: 30px;
@@ -160,6 +155,45 @@
 }
 
 //fin parte raquel
+
+//version tablet
+
+.collapsible__content{
+  display: none;
+}
+.collapsible__label{
+  cursor: pointer;
+}
+
+.collapsible--visible{
+  .collapsible__content {
+    display: block;
+  }
+}
+
+
+
+@media all and (min-width: 768px){
+  .main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: 852px;
+    background-image: linear-gradient(to bottom, $color-light-medium, $color-light);
+  }
+
+  .main__section-card{
+    height: 100%;
+  }
+  .section--top{
+    height: 812px;
+    border-radius: 6px;
+  }
+
+
+}
+
 /* HEADER */
 
 .header--tarjeta {
@@ -352,7 +386,7 @@
   margin-right: 20px;
 }
 
-.box-previmg {
+.box--previmg {
   width: 30px;
   height: 30px;
   border: solid $color-light-medium-dark 1px;
@@ -394,8 +428,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 23px;
-  padding-right: 20px;
+
 }
 
 .form2__wrapper2 {
@@ -408,6 +441,7 @@
   font-size: $font-size-large;
   font-family: $font-family-primary;
   color: $color-medium;
+  text-transform: uppercase;
 }
 
 .form2__title--icon {
