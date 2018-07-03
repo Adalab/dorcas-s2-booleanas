@@ -9,6 +9,7 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  padding-bottom: 0;
 }
 
 .title__section-desing-container{
@@ -26,10 +27,10 @@
   line-height: normal;
   letter-spacing: normal;
   text-transform: uppercase;
-  color: $color-medium;
+  color:$color-medium;
 }
 
-.icon-ungroup-desing {
+.icon-ungroup-desing{
   font-size: $font-size-large;
   font-weight: normal;
   font-style: normal;
@@ -39,90 +40,85 @@
   color: $color-primary;
 }
 
-.icon-chevron-up-desing {
-  font-size: $font-size-large;
-  color: $color-medium;
+.icon-chevron-up-desing{
+    font-size: $font-size-large;
+
+  color:$color-medium;
 }
 
-.form__container-radio {
-  margin-left: 39px;
-  display: flex;
-  justify-content: space-between;
+.form__container-radio{
+    margin-left: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+.input__design{
+    display: flex;
+    flex-direction: column;
 }
 
-.input__design {
-  display: flex;
-  flex-direction: column;
+.block{
+
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 113px;
+    position: relative;
 }
 
-.block {
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-  width: 113px;
-  position: relative;
+
+.first-block{
+    margin-top: 0;
+}
+.radio__options{
+
+    display: flex;
+    margin-left: 10px;
 }
 
-.first-block {
-  margin-top: 0;
+.color{
+    width: 30px;
+    height: 25px;
+    background-color: black;
+}
+.color__paleta-primary1{
+    background-color: $color-tertiary;
+}
+.color__paleta-primary2{
+    background-color: $color-secundary;
+}
+.color__paleta-primary3{
+    background-color: $color-light-medium-dark;
 }
 
-.radio__options {
-  display: flex;
-  margin-left: 10px;
+.color__paleta-secondary1{
+    background-color: $color-dark-medium;
+}
+.color__paleta-secondary2{
+    background-color: $color-dark-light;
+}
+.color__paleta-secondary3{
+    background-color: $color-primary;
 }
 
-.color {
-  width: 30px;
-  height: 25px;
-  background-color: black;
+.color__paleta-tertiary1{
+    background-color: $color-medium-light;
+}
+.color__paleta-tertiary2{
+    background-color: $color-light-light;
+}
+.color__paleta-tertiary3{
+    background-color: $color-light-dark;
 }
 
-.color__paleta-primary1 {
-  background-color: $color-tertiary;
+.top-container-radiofont{
+    margin-top: 36px;
 }
 
-.color__paleta-primary2 {
-  background-color: $color-secundary;
-}
-
-.color__paleta-primary3 {
-  background-color: $color-light-medium-dark;
-}
-
-.color__paleta-secondary1 {
-  background-color: $color-dark-medium;
-}
-
-.color__paleta-secondary2 {
-  background-color: $color-dark-light;
-}
-
-.color__paleta-secondary3 {
-  background-color: $color-primary;
-}
-
-.color__paleta-tertiary1 {
-  background-color: $color-medium-light;
-}
-
-.color__paleta-tertiary2 {
-  background-color: $color-light-light;
-}
-
-.color__paleta-tertiary3 {
-  background-color: $color-light-dark;
-}
-
-.top-container-radiofont {
-  margin-top: 36px;
-}
-
-.label-block {
+.label-block{
   text-transform: uppercase;
   font-family: $font-family-primary;
-  font-size: $font-size-small;
+  font-size: $font-size-small   ;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -130,18 +126,17 @@
   letter-spacing: normal;
 }
 
-.font__style-font1 {
+.font__style-font1{
   font-family: $font-family-primary;
   font-size: $font-size-medium;
   font-weight: $font-weight-medium;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: normal;
+  letter-spacing: normal
 }
-
-.font__style-font2 {
-  font-family: $font-family-design1;
+.font__style-font2{
+    font-family: $font-family-design1;
   font-size: $font-size-medium;
   font-weight: normal;
   font-style: normal;
@@ -149,9 +144,8 @@
   line-height: normal;
   letter-spacing: normal;
 }
-
-.font__style-font3 {
-  font-family: $font-family-secondary;
+.font__style-font3{
+    font-family: $font-family-secondary;
   font-size: $font-size-medium;
   font-weight: normal;
   font-style: normal;
@@ -161,6 +155,45 @@
 }
 
 //fin parte raquel
+
+//version tablet
+
+.collapsible__content{
+  display: none;
+}
+.collapsible__label{
+  cursor: pointer;
+}
+
+.collapsible--visible{
+  .collapsible__content {
+    display: block;
+  }
+}
+
+
+
+@media all and (min-width: 768px){
+  .main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: 852px;
+    background-image: linear-gradient(to bottom, $color-light-medium, $color-light);
+  }
+
+  .main__section-card{
+    height: 100%;
+  }
+  .section--top{
+    height: 812px;
+    border-radius: 6px;
+  }
+
+
+}
+
 /* HEADER */
 
 .header--tarjeta {
@@ -176,22 +209,18 @@
 
 .section--top {
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);//añadir variables
+  width: vw;
   padding: 10px 35px 30px 45px;
-}
-
-.section--top__wrapper {
-  width: 240px;
-  margin: auto;
 }
 
 .button {
   font-family: $font-family-primary;
-  color: $color-light;
+  color: $color-medium;
   border: 1px solid $color-light;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: transparent;
+  background-color: #bfcdd0;
   padding: 5px;
 }
 
@@ -261,7 +290,7 @@
   margin: 0 82px 0 15px;
 }
 
-.card__skills--icon {
+.card__skills-icon {
   display: inline-block;
   border-radius: 4px;
   background-color: $color-secundary;
@@ -299,14 +328,14 @@
   margin-top: 10px;
 }
 
-.section--stuffed__icon {
+.section-stuffed__icon {
   color: $color-primary;
   font-size: $font-size-large;
   margin-right: 10px;
   font-weight: $font-weight-light;
 }
 
-.section--stuffed__arrow {
+.section-stuffed__arrow {
   margin-left: 155px;
   font-size: $font-size-large;
 }
@@ -392,8 +421,6 @@
 
 .form2--stuffed {
   border: 0;
-  width: 281px;
-  margin: auto;
 }
 
 .form2__wrapper {
@@ -401,6 +428,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .form2__wrapper2 {
@@ -445,9 +473,12 @@
   font-weight: $font-weight-medium;
   margin-bottom: 30px;
   margin-top: 30px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 .button--icon {
   margin-right: 10px;
+}
+
+.line2 {
+  margin-bottom: 30px;
 }
