@@ -1,5 +1,6 @@
 //parte raquel
-.container__colors-fonts {
+
+.container__colors-fonts{
   width: 280px;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -10,13 +11,13 @@
   border-right: 0;
 }
 
-.title__section-desing-container {
+.title__section-desing-container{
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.title__section-desing-title {
+.title__section-desing-title{
   font-family: $font-family-primary;
   font-size: $font-size-large;
   font-weight: $font-weight-medium;
@@ -175,18 +176,22 @@
 
 .section--top {
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);//añadir variables
-  width: vw;
   padding: 10px 35px 30px 45px;
+}
+
+.section--top__wrapper {
+  width: 240px;
+  margin: auto;
 }
 
 .button {
   font-family: $font-family-primary;
-  color: $color-medium;
+  color: $color-light;
   border: 1px solid $color-light;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: #bfcdd0;
+  background-color: transparent;
   padding: 5px;
 }
 
@@ -256,7 +261,7 @@
   margin: 0 82px 0 15px;
 }
 
-.card__skills-icon {
+.card__skills--icon {
   display: inline-block;
   border-radius: 4px;
   background-color: $color-secundary;
@@ -352,7 +357,7 @@
   margin-right: 20px;
 }
 
-.box-previmg {
+.box--previmg {
   width: 30px;
   height: 30px;
   border: solid $color-light-medium-dark 1px;
@@ -387,6 +392,8 @@
 
 .form2--stuffed {
   border: 0;
+  width: 281px;
+  margin: auto;
 }
 
 .form2__wrapper {
@@ -406,6 +413,7 @@
   font-size: $font-size-large;
   font-family: $font-family-primary;
   color: $color-medium;
+  text-transform: uppercase;
 }
 
 .form2__title--icon {
@@ -437,6 +445,7 @@
   font-weight: $font-weight-medium;
   margin-bottom: 30px;
   margin-top: 30px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 .button--icon {

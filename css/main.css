@@ -1,4 +1,4 @@
-@charset "UTF-8";/* VARIABLES TIPOGRAFÍA *//* Tamaños *//* Familias *//* Grosor */.button-start {
+@charset "UTF-8";/* VARIABLES TIPOGRAFÍA *//* Tamaños *//* Familias *//* Grosor */.button--start {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +22,7 @@
   font-size: 16px;
 }
 
-.button-adalab__img {
+.button--adalab__img {
   height: 40px;
   width: 103px;
   margin-top: 10px;
@@ -264,18 +264,22 @@
 }/* SECCIÓN FOTO */.section--top {
   background: -webkit-gradient(linear, left top, left bottom, from(#dd0042), to(#ffd6f9));
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);
-  width: vw;
   padding: 10px 35px 30px 45px;
+}
+
+.section--top__wrapper {
+  width: 240px;
+  margin: auto;
 }
 
 .button {
   font-family: "Open Sans", sans-serif;
-  color: #54585a;
+  color: #fff;
   border: 1px solid #fff;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: #bfcdd0;
+  background-color: transparent;
   padding: 5px;
 }
 
@@ -356,7 +360,7 @@
   margin: 0 82px 0 15px;
 }
 
-.card__skills-icon {
+.card__skills--icon {
   display: inline-block;
   border-radius: 4px;
   background-color: #438792;
@@ -464,7 +468,7 @@
   margin-right: 20px;
 }
 
-.box-previmg {
+.box--previmg {
   width: 30px;
   height: 30px;
   border: solid #a2deaf 1px;
@@ -497,6 +501,8 @@
   padding-left: 5px;
 }/* FORMULARIO */.form2--stuffed {
   border: 0;
+  width: 281px;
+  margin: auto;
 }
 
 .form2__wrapper {
@@ -532,6 +538,7 @@
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
+  text-transform: uppercase;
 }
 
 .form2__title--icon {
@@ -569,6 +576,8 @@
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 30px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 .button--icon {
@@ -599,7 +608,7 @@
   justify-content: center;
 }
 
-.header__container-logo {
+.header__container--logo {
   margin-top: 94px;
   margin-bottom: 35px;
 }
@@ -678,7 +687,7 @@
   font-weight: normal;
 }
 
-.list__element-icon {
+.list__element--icon {
   color: #e17334;
   font-size: 28px;
   margin-bottom: 6px;
