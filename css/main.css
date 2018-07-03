@@ -277,22 +277,18 @@
 }/* SECCIÓN FOTO */.section--top {
   background: -webkit-gradient(linear, left top, left bottom, from(#dd0042), to(#ffd6f9));
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);
+  width: vw;
   padding: 10px 35px 30px 45px;
-}
-
-.section--top__wrapper {
-  width: 240px;
-  margin: auto;
 }
 
 .button {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #54585a;
   border: 1px solid #fff;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: transparent;
+  background-color: #bfcdd0;
   padding: 5px;
 }
 
@@ -305,6 +301,8 @@
   height: 367px;
   background-color: #fff;
   margin: auto;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .card__title {
@@ -418,14 +416,14 @@
   margin-top: 10px;
 }
 
-.section--stuffed__icon {
+.section-stuffed__icon {
   color: #e17334;
   font-size: 18px;
   margin-right: 10px;
   font-weight: normal;
 }
 
-.section--stuffed__arrow {
+.section-stuffed__arrow {
   margin-left: 155px;
   font-size: 18px;
 }
@@ -514,8 +512,6 @@
   padding-left: 5px;
 }/* FORMULARIO */.form2--stuffed {
   border: 0;
-  width: 281px;
-  margin: auto;
 }
 
 .form2__wrapper {
@@ -589,12 +585,16 @@
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 30px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .button--icon {
   margin-right: 10px;
+}
+
+.line2 {
+  margin-bottom: 30px;
 }
 
 .page__wrapper {
