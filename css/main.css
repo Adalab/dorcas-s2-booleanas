@@ -739,7 +739,7 @@ body {
     padding: 0 40px;
   }
 
-  .main {
+  .main__target {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
