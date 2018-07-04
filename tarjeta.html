@@ -32,8 +32,8 @@
             </button>
           </div>
           <div class="section--top__card">
-            <span class="card__title card--name">Nombre Apellido</span>
-            <span class="card__subtitle card--job">Front-end developer</span>
+            <span class="card__title" id="card--name">Nombre Apellido</span>
+            <span class="card__subtitle" id="card--job">Front-end developer</span>
             <img class="photo" src="https://picsum.photos/240/200" alt="foto">
 
             <ul class="card__media">
@@ -162,10 +162,10 @@
             <div class="collapsible__content">
 
                 <label class="label--stuffed" for="complete--name">Nombre completo</label>
-                <input class="input--stuffed input--datos" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
+                <input class="input--stuffed input--name" data-elementos="card--name" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
 
                 <label class="label--stuffed" for="job">Puesto</label>
-                <input class="input--stuffed input--datos" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" value="">
+                <input class="input--stuffed input--job" data-elementos="card--job" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" value="">
 
                 <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
                 <div class="div--stuffed__img">
