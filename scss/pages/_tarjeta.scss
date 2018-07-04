@@ -46,14 +46,22 @@
 }
 
 .form__container-radio {
-  margin-left: 39px;
-  display: flex;
-  justify-content: space-between;
+    margin-left: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+.input__design {
+    display: flex;
+    flex-direction: column;
 }
 
-.input__design {
+.block {
   display: flex;
-  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  width: 113px;
+  position: relative;
 }
 
 .block {
@@ -79,15 +87,12 @@
   height: 25px;
   background-color: black;
 }
-
 .color__paleta-primary1 {
   background-color: $color-tertiary;
 }
-
 .color__paleta-primary2 {
   background-color: $color-secundary;
 }
-
 .color__paleta-primary3 {
   background-color: $color-light-medium-dark;
 }
@@ -168,7 +173,6 @@
 .collapsible__content {
   display: none;
 }
-
 .collapsible__label {
   cursor: pointer;
 }
@@ -192,7 +196,7 @@
   .main__section-card {
     height: 100%;
   }
-
+  
   .section--top {
     height: 812px;
     border-radius: 6px;
@@ -238,6 +242,7 @@
   height: 367px;
   background-color: $color-light;
   margin: auto;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .card__title {
@@ -295,7 +300,7 @@
   margin: 0 82px 0 15px;
 }
 
-.card__skills-icon {
+.card__skills--icon {
   display: inline-block;
   border-radius: 4px;
   background-color: $color-secundary;
@@ -477,6 +482,7 @@
   font-weight: $font-weight-medium;
   margin-bottom: 30px;
   margin-top: 30px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .button--icon {

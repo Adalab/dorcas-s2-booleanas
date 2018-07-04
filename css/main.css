@@ -159,6 +159,19 @@
   position: relative;
 }
 
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 113px;
+  position: relative;
+}
+
 .first-block {
   margin-top: 0;
 }
@@ -301,6 +314,8 @@
   height: 367px;
   background-color: #fff;
   margin: auto;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .card__title {
@@ -369,7 +384,7 @@
   margin: 0 82px 0 15px;
 }
 
-.card__skills-icon {
+.card__skills--icon {
   display: inline-block;
   border-radius: 4px;
   background-color: #438792;
@@ -583,6 +598,8 @@
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 30px;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .button--icon {
