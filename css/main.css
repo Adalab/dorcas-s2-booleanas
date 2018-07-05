@@ -233,6 +233,19 @@
   position: relative;
 }
 
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 113px;
+  position: relative;
+}
+
 .first-block {
   margin-top: 0;
 }
@@ -876,7 +889,7 @@ body {
     padding: 0 40px;
   }
 
-  .main {
+  .main__target {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
