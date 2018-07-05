@@ -11,7 +11,6 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  padding-bottom: 0;
 }
 
 .title__section-desing-container {
@@ -48,13 +47,14 @@
 }
 
 .form__container-radio {
-    margin-left: 39px;
-    display: flex;
-    justify-content: space-between;
+  margin-left: 39px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .input__design {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .block {
@@ -89,12 +89,15 @@
   height: 25px;
   background-color: black;
 }
+
 .color__paleta-primary1 {
   background-color: $color-tertiary;
 }
+
 .color__paleta-primary2 {
   background-color: $color-secundary;
 }
+
 .color__paleta-primary3 {
   background-color: $color-light-medium-dark;
 }
@@ -175,6 +178,7 @@
 .collapsible__content {
   display: none;
 }
+
 .collapsible__label {
   cursor: pointer;
 }
@@ -198,7 +202,7 @@
   .main__section-card {
     height: 100%;
   }
-  
+
   .section--top {
     height: 812px;
     border-radius: 6px;
@@ -217,7 +221,7 @@
 }
 >>>>>>> b59b972789434f673fe24457e3a0ed2c1218b38f
 
-/* SECCIÓN FOTO */
+/* SECCIÓN FOTO (Bismilah) */
 
 .section--top {
   background: linear-gradient(to bottom, #dd0042, #ffd6f9); //añadir variables
@@ -227,12 +231,12 @@
 
 .button {
   font-family: $font-family-primary;
-  color: $color-medium;
+  color: $color-light;
   border: 1px solid $color-light;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: #bfcdd0;
+  background-color: transparent;
   padding: 5px;
 }
 
