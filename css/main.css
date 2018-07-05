@@ -86,7 +86,6 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  padding-bottom: 0;
 }
 
 .title__section-desing-container {
@@ -204,7 +203,7 @@
   background-color: #3e5b65;
 }
 
-.color__paleta-tertiary2 {
+.color__paleta-tertiary2v {
   background-color: #dfe5eb;
 }
 
@@ -274,7 +273,7 @@
 .header__logo--tarjeta {
   width: 201px;
   height: 51px;
-}/* SECCIÓN FOTO */.section--top {
+}/* SECCIÓN FOTO (Bismilah) */.section--top {
   background: -webkit-gradient(linear, left top, left bottom, from(#dd0042), to(#ffd6f9));
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);
   width: vw;
@@ -283,12 +282,12 @@
 
 .button {
   font-family: "Open Sans", sans-serif;
-  color: #54585a;
+  color: #fff;
   border: 1px solid #fff;
   border-radius: 15px;
   width: 75px;
   height: 30px;
-  background-color: #bfcdd0;
+  background-color: transparent;
   padding: 5px;
 }
 
