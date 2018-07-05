@@ -42,5 +42,17 @@ for (var i = 0; i < collapsibleContainer.length; i++) {
 
   collapsibleLabel[i].addEventListener('click', updateCollapsibles);
 }
-//formulario-campo-typo"texto".
-var
+
+//Formulario INPUTS
+var inputDataName = document.querySelector('.input--name');
+var inputDataJob = document.querySelector('.input--job');
+
+
+function updateCard(event) {
+  var inputElement = event.currentTarget;
+  var targetID = inputElement.getAttribute('data-elementos');
+  document.querySelector('#' + targetID).innerHTML = inputElement.value;
+}
+
+inputDataName.addEventListener('keyup', updateCard);
+inputDataJob.addEventListener('keyup', updateCard);
