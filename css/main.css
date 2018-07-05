@@ -160,6 +160,7 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  padding-bottom: 0;
 }
 
 .title__section-desing-container {
@@ -232,19 +233,6 @@
   position: relative;
 }
 
-.block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 113px;
-  position: relative;
-}
-
 .first-block {
   margin-top: 0;
 }
@@ -290,7 +278,7 @@
   background-color: #3e5b65;
 }
 
-.color__paleta-tertiary2v {
+.color__paleta-tertiary2 {
   background-color: #dfe5eb;
 }
 
@@ -439,13 +427,6 @@
 
 .collapsible--visible .collapsible__content {
   display: block;
-}/* HEADER */.header--tarjeta {
-  padding: 30px 79px 30px 40px;
-}
-
-.header__logo--tarjeta {
-  width: 201px;
-  height: 51px;
 }/* SECCIÓN FOTO (Bismilah) */.section--top {
   background: -webkit-gradient(linear, left top, left bottom, from(#dd0042), to(#ffd6f9));
   background: linear-gradient(to bottom, #dd0042, #ffd6f9);
@@ -895,7 +876,7 @@ body {
     padding: 0 40px;
   }
 
-  .main__target {
+  .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
