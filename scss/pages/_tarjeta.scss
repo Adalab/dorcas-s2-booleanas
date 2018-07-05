@@ -64,6 +64,14 @@
   position: relative;
 }
 
+.block {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  width: 113px;
+  position: relative;
+}
 
 .first-block {
   margin-top: 0;
@@ -108,7 +116,7 @@
   background-color: $color-medium-light;
 }
 
-.color__paleta-tertiary2v {
+.color__paleta-tertiary2 {
   background-color: $color-light-light;
 }
 
@@ -179,9 +187,8 @@
   }
 }
 
-
 @media all and (min-width: 768px) {
-  .main {
+  .main__target {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -435,7 +442,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .form2__wrapper2 {

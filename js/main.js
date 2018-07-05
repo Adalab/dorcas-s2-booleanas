@@ -7,7 +7,7 @@ var collapsibleContainer = document.querySelectorAll('.collapsible__container');
 var collapsibleLabel = document.querySelectorAll('.collapsible__label');
 
 
-function updateCollapsibles(e) {  
+function updateCollapsibles(e) {
 
   //se le pasa el evento del click en el collapsible que se haya clicado
   // y mete en la variable el padre de ese collapsible
@@ -28,7 +28,7 @@ function updateCollapsibles(e) {
 
 }
 
-//funcion que va elimininando la clase collapsible--visible 
+//funcion que va elimininando la clase collapsible--visible
 function closeAllCollapsibles() {
   for (var i = 0; i < collapsibleContainer.length; i++) {
     collapsibleContainer[i].classList.remove('collapsible--visible');
@@ -42,3 +42,17 @@ for (var i = 0; i < collapsibleContainer.length; i++) {
 
   collapsibleLabel[i].addEventListener('click', updateCollapsibles);
 }
+
+//Formulario INPUTS
+var inputDataName = document.querySelector('.input--name');
+var inputDataJob = document.querySelector('.input--job');
+
+
+function updateCard(event) {
+  var inputElement = event.currentTarget;
+  var targetID = inputElement.getAttribute('data-elementos');
+  document.querySelector('#' + targetID).innerHTML = inputElement.value;
+}
+
+inputDataName.addEventListener('keyup', updateCard);
+inputDataJob.addEventListener('keyup', updateCard);
