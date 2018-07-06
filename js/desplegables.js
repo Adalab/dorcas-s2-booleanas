@@ -1,10 +1,6 @@
 'use strict';
 
 
-
-'use strict';
-
-
 //mete en la variable todos las clases que existen collapsible__container
 var collapsibleContainer = document.querySelectorAll('.collapsible__container');
 //mete en la variable todos las clases que existen collapsible__label
@@ -46,5 +42,3 @@ for (var i = 0; i < collapsibleContainer.length; i++) {
 
   collapsibleLabel[i].addEventListener('click', updateCollapsibles);
 }
-
-//# sourceMappingURL=main.min.js.map

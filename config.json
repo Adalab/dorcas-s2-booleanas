@@ -5,10 +5,11 @@
 	},
 	"js": {
 		"src": [
-			"js/main.js"
+			"js/main.js", "js/desplegables.js"
 		],
 		"dest": "js/"
 	},
+	
 	"images": "images/**/*.{gif,jpg,png,svg}",
 	"html": [
     "**/*.html",
