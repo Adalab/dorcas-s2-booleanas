@@ -1,4 +1,3 @@
-'use strict';
 
 
 //mete en la variable todos las clases que existen collapsible__container
