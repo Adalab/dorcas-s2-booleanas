@@ -18,9 +18,11 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header--tarjeta">
     <img class="header__logo--tarjeta" src="images/awesome-p-c.svg" alt="Logotipo">
   </header>
+  <!-- TARJETA -->
   <main class="main__target">
     <div class="main__section-card">
       <section class="section--top">
@@ -37,18 +39,18 @@
             <img class="photo" src="https://picsum.photos/240/200" alt="foto">
 
             <ul class="card__media">
-              <li class="card__media--icon">
-                <i class="fas fa-mobile-alt"></i>
-              </li>
-              <li class="card__media--icon">
-                <i class="far fa-envelope"></i>
-              </li>
-              <li class="card__media--icon">
-                <i class="fab fa-linkedin-in"></i>
-              </li>
-              <li class="card__media--icon">
-                <i class="fab fa-github-alt"></i>
-              </li>
+              <a id="tlf" href=""><li class="card__media--icon">
+              <i class="fas fa-mobile-alt"></i>
+              </li></a>
+              <a id="email" href=""><li class="card__media--icon">
+              <i class="far fa-envelope"></i>
+              </li></a>
+              <a id="linkedin" href=""><li class="card__media--icon">
+              <i class="fab fa-linkedin-in"></i>
+              </li></a>
+              <a id="github" href=""><li class="card__media--icon">
+              <i class="fab fa-github-alt"></i>
+              </li></a>
             </ul>
 
             <hr class="line">
@@ -68,7 +70,8 @@
       </section>
       </div>
     </div>
-
+<!-- FORMULARIO -->
+<!-- DISEÑA -->
     <div class="main__section-form">
       <form class="form" action="">
         <fieldset class="container__colors-fonts">
@@ -150,8 +153,7 @@
             </div>
           </div>
         </fieldset>
-
-
+<!-- RELLENA -->
         <section class="section--stuffed">
           <div class="collapsible__container">
             <fieldset class="subsection--stuffed">
@@ -162,10 +164,10 @@
             <div class="collapsible__content">
 
                 <label class="label--stuffed" for="complete--name">Nombre completo</label>
-                <input class="input--stuffed input--name" data-elementos="card--name" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
+                <input class="input--stuffed input--text" data-elementos="card--name" placeholder="Ej: Sally Hill" id="complete--name" type="text" name="complete--name" value="">
 
                 <label class="label--stuffed" for="job">Puesto</label>
-                <input class="input--stuffed input--job" data-elementos="card--job" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" value="">
+                <input class="input--stuffed input--text" data-elementos="card--job" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" value="">
 
                 <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
                 <div class="div--stuffed__img">
@@ -175,16 +177,16 @@
                 </div>
 
                 <label class="label--stuffed" for="email">Email</label>
-                <input class="input--stuffed" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" value="">
+                <input class="input--stuffed input--href" data-href="email" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" value="">
 
                 <label class="label--stuffed" for="tlf">Teléfono</label>
-                <input class="input--stuffed" placeholder="Ej:555-555-555" id="tlf" type="tel" name="tlf" value="">
+                <input class="input--stuffed input--href" data-href="tlf" placeholder="Ej:555-555-555" id="tlf" type="tel" name="tlf" value="">
 
                 <label class="label--stuffed" for="lkd">Linkedin</label>
-                <input class="input--stuffed" placeholder="Ej: linkedin.com/in/sally.hill" id="lkd" type="text" name="lkd" value="">
+                <input class="input--stuffed input--href" data-href="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="lkd" type="text" name="lkd" value="">
 
                 <label class="label--stuffed" for="gith">Github</label>
-                <input class="input--stuffed" placeholder="Ej: @sally-hill" id="gith" type="text" name="gith" value="">
+                <input class="input--stuffed input--href" data-href="github" placeholder="Ej: @sally-hill" id="gith" type="text" name="gith" value="">
 
                 <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
                 <div class="container__skills--stuffed container__skills1">
@@ -209,7 +211,7 @@
             </div>
           </div>
         </section>
-
+<!-- COMPARTE -->
         <fieldset class="form2--stuffed">
           <div class="collapsible__container">
             <div class="collapsible__label">
@@ -234,6 +236,7 @@
       </form>
     </div>
   </main>
+  <!-- FOOTER -->
   <footer class="footer">
     <span class="footer__span">Awesome profile-cards @2018</span>
     <a href="#" class="button-adalab">
@@ -242,6 +245,7 @@
   </section>
 
   <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
