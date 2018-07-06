@@ -5,7 +5,7 @@
 	"dependencies": {
 		"browser-sync": "^2.24.5",
 		"eslint": "^4.19.1",
-		"gulp": "^4",
+		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
 		"gulp-combine-mq": "*",
