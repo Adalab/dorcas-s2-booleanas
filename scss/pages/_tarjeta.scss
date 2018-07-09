@@ -247,6 +247,15 @@
   font-size: $font-size-large;
 }
 
+@keyframes intro {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
 .form2__button--container {
   display: flex;
   align-items: center;
