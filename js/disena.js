@@ -1,5 +1,5 @@
 
-
+'use strict';
 
 //SECCION DISEÑA COLORES//
 

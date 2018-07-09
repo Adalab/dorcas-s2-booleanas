@@ -5,9 +5,7 @@
 	},
 	"js": {
 		"src": [
-			"js/main.js", 
-			"js/desplegables.js",
-			"js/disena.js"
+			"js/main.js"
 		],
 		"dest": "js/"
 	},
