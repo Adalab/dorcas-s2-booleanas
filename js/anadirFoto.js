@@ -9,28 +9,27 @@ var preview = document.querySelector('.preview');
 
 
 
-function getImage(e){
-    
+function getImage(e) {
 
-    var myFile = e.currentTarget.files[0];
-    fr.addEventListener('load', writeImage);
-    fr.readAsDataURL(myFile);
+  var myFile = e.currentTarget.files[0];
+  fr.addEventListener('load', writeImage);
+  fr.readAsDataURL(myFile);
 
 }
 
-function writeImage(){
+function writeImage() {
 
-    profileImg.src = fr.result;
-    preview.src = fr.result;
+  profileImg.src = fr.result;
+  preview.src = fr.result;
 }
 
 
 
-function inputClick(){
-  
-    inputImg.click();
-   
-   
+function inputClick() {
+
+  inputImg.click();
+
+
 }
 
 
