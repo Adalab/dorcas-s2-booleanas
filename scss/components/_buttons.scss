@@ -17,12 +17,11 @@
 }
 
 .button--adalab__img {
-  height: 23px;
-  width: 134px;
+  width: 124px;
   margin-top: 10px;
 }
 
-.button--stuffed {
+.btn-select {
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -30,7 +29,5 @@
   border: 1px solid $color-primary;
   color: $color-primary;
   font-size: $font-size-large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }

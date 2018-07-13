@@ -48,6 +48,7 @@ for (var i = 0; i < radioColors.length; i++) {
 var radioFonts = document.querySelectorAll('.radio-fonts');
 var titulo = document.querySelector('.card__title');
 var subtitulo = document.querySelector('.card__subtitle');
+var skills = document.querySelectorAll('.icon__text');
 
 
 
@@ -59,41 +60,67 @@ function seleccionFuente(e) {
   var font4 = 'style-fonts4'
   console.log(id.id);
   if (id.id === font1) {
-    eliminaFuente();
+    
+    var fonClass1 = 'font__style-font1';
+    eliminaFuente(fonClass1);
     titulo.classList.add('font__style-font1');
     subtitulo.classList.add('font__style-font1');
+    for(var i = 0 ; i < skills.length; i++){
+      console.log(skills[i]);
+      skills[i].classList.add('font__style-font1');
+    }
 
   }
   if (id.id === font2) {
-    eliminaFuente();
+    
+    var fonClass2 = 'font__style-font2';
+    eliminaFuente(fonClass2);
     titulo.classList.add('font__style-font2');
     subtitulo.classList.add('font__style-font2');
+    for (var i = 0; i < skills.length; i++) {
+      skills[i].classList.add('font__style-font2');
+    }
 
   }
   if (id.id === font3) {
-    eliminaFuente();
+  
+      var fonClass3 = 'font__style-font3';
+      eliminaFuente(fonClass3);
     titulo.classList.add('font__style-font3');
     subtitulo.classList.add('font__style-font3');
+    for (var i = 0; i < skills.length; i++) {
+      skills[i].classList.add('font__style-font3');
+    }
 
   }
   if (id.id === font4) {
-    eliminaFuente();
+   
+    var fonClass4 = 'font__style-font4';
+    eliminaFuente(fonClass4);
     titulo.classList.add('font__style-font4');
     subtitulo.classList.add('font__style-font4');
+    for (var i = 0; i < skills.length; i++) {
+      skills[i].classList.add('font__style-font4');
+    }
 
   }
 }
 
-function eliminaFuente() {
+function eliminaFuente(font) {
 
-  titulo.classList.remove('font__style-font1');
-  subtitulo.classList.remove('font__style-font1');
-  titulo.classList.remove('font__style-font2');
-  subtitulo.classList.remove('font__style-font2');
-  titulo.classList.remove('font__style-font3');
-  subtitulo.classList.remove('font__style-font3');
-  titulo.classList.remove('font__style-font4');
-  subtitulo.classList.remove('font__style-font4');
+console.log("eliminar ", font);
+
+  titulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  titulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  titulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  titulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+  subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+   for (var i = 0; i < skills.length; i++) {
+     skills[i].classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+   }
 
 }
 

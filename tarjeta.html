@@ -33,7 +33,7 @@
             </button>
           </div>
           <div class="section--top__card primary-palette">
-            <span class="card__title" id="card--name">Nombre Apellido</span>
+            <span class="card__title font__style-font1" id="card--name">Nombre Apellido</span>
             <span class="card__subtitle" id="card--job">Front-end developer</span>
             <img class="photo" src="https://picsum.photos/240/200" alt="foto">
 
@@ -82,16 +82,16 @@
     <div class="main__section-form">
       <form class="form" action="">
         <fieldset class="container__colors-fonts">
-          <div class="collapsible__container">
+          <div class="collapsible__container collapsible--visible" data-valor="1";>
             <div class="title__section-desing-container collapsible__label">
               <div class="title__section-title">
                 <legend class="title__section-desing-title ">
                   <span>
-                    <i class="far fa-object-ungroup icon-ungroup-desing "></i>
+                    <i class="far fa-object-ungroup icon-ungroup-desing"></i>
                   </span> diseña</legend>
               </div>
               <div class="title__section-icon">
-                <i class="fas fa-chevron-up icon-chevron-up-desing"></i>
+                <i class="fas fa-chevron-up icon-chevron-up-desing icon-collapsible"  data-valor="1"></i>
               </div>
             </div>
             <div class="collapsible__content">
@@ -101,7 +101,7 @@
                   </div>
                   <div class="input__design">
                     <label class="block first-block" for="paleta-primary">
-                      <input class="radio-colors select-style" type="radio" value="radio" id="paleta-primary" name="radio-colors">
+                      <input class="radio-colors select-style" type="radio" value="radio" id="paleta-primary" name="radio-colors" checked>
                       <span class="checkmark"></span>
                       <div class="radio__options">
                         <label for="paleta-primary" class="color color__paleta-primary1"></label>
@@ -147,7 +147,7 @@
                   </div>
                   <div class="input__design">
                     <label class="block first-block" for="style-fonts1">
-                      <input class="radio-fonts select-style" type="radio" id="style-fonts1" name="radio-fonts">
+                      <input class="radio-fonts select-style" type="radio" id="style-fonts1" name="radio-fonts" checked>
                       <span class="checkmark"></span>
                       <div class="radio__options">
                         <label for="style-fonts" class="font__style-font1">ubuntu</label>
@@ -181,10 +181,18 @@
         </fieldset>
         <!-- RELLENA -->
             <fieldset class="subsection--stuffed">
-              <div class="collapsible__container">
-              <div class="form__subtitle collapsible__label">
-                <legend><span><i class="far fa-keyboard section-stuffed__icon"></i></span>rellena<i class="fas fa-chevron-up section-stuffed__arrow"></i></legend>
-              </div>
+              <div class="collapsible__container" data-valor="2">
+                <div class="title__section-desing-container collapsible__label">
+                  <div class="title__section-title">
+                    <legend class="title__section-desing-title ">
+                      <span>
+                        <i class="far fa-keyboard section-stuffed__icon"></i>
+                      </span>rellena</legend>
+                  </div>
+                  <div class="title__section-icon">
+                    <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="2"></i>
+                  </div>
+                </div>
               <div class="collapsible__content">
 
                 <label class="label--stuffed" for="complete--name">Nombre completo</label>
@@ -196,7 +204,13 @@
                   name="job" value="">
 
                 <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
-                <div class="div--stuffed__img"></div>
+                <div class="div--stuffed__img">
+                  <button class="input--stuffed__img " type="button">Añadir imagen</button>
+                  <input class="input__img-hiddenField" id="img--profile" type="file">
+                  <div class="box--previmg">
+                    <img class="preview" src="" alt="">
+                  </div>
+                </div>
 
                 <label class="label--stuffed" for="email">Email</label>
                 <input class="input--stuffed input--href" data-href="email" placeholder="Ej: sally-hill@gmail.com" id="email" type="email"
@@ -214,38 +228,29 @@
                   value="">
 
                 <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
-                <div class="container__skills--stuffed container__skills1">
-                  <select class="skills--stuffed" id="skills1" name="skills1">
-                    <option value="html">html</option>
-                  </select>
-                  <button class="button--stuffed button--stuffed__minus" type="button" name="button">
-                    <i class="fas fa-minus minus__stuffed"></i>
-                  </button>
-                </div>
-
-                <div class="container__skills--stuffed container__skills2">
-                  <label class="label--stuffed" for="skills2"></label>
-                  <select class="skills--stuffed" id="skills2" name="skills2">
-                    <option value="css">css</option>
-                  </select>
-                  <button class="button--stuffed button--stuffed__plus" type="button" name="button">
-                    <i class="fas fa-plus plus__stuffed"></i>
-                  </button>
-                </div>
+          
+                  <div class="label--stuffed__container-select">
+                  
+                  </div>
+                  <ul class="card__skills">
+                  
+                  </ul>
               </div>
               </div>
             </fieldset>
 
     <!-- COMPARTE -->
     <fieldset class="form2--stuffed">
-      <div class="collapsible__container">
-        <div class="collapsible__label">
-          <div class="form2__wrapper">
-            <div class="form2__wrapper2">
-              <i class="fas fa-share-alt form2__title--icon"></i>
-              <legend class="form2__title">comparte</legend>
-            </div>
-            <i class="fas fa-chevron-up arrow--icon"></i>
+      <div class="collapsible__container" data-valor="3">
+        <div class="title__section-desing-container collapsible__label">
+          <div class="title__section-title">
+            <legend class="title__section-desing-title ">
+              <span>
+                <i class="fas fa-share-alt form2__title--icon"></i>
+              </span>comparte</legend>
+          </div>
+          <div class="title__section-icon">
+            <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="3"></i>
           </div>
         </div>
         <div class="collapsible__content">
@@ -264,8 +269,9 @@
   <!-- FOOTER -->
   <footer class="footer">
     <span class="footer__span">Awesome profile-cards @2018</span>
-    <a href="#" class="button-adalab">
-      <img src="images/logo-queens.png" alt="enlace a adalab" class="button--adalab__img"> </a>
+		    <a href="http://adalab.es/" target="_blank" class="button-adalab">
+      <img src="images/logo-adalab.png" alt="enlace adalab" class="button--adalab__img"></a>
+      <img src="images/logo-queens.png" alt="logo queens of hearts" class="logo-hearts__img">
   </footer>
   </section>
 
@@ -273,6 +279,8 @@
   <script src="js/desplegables.js"></script>
   <script src="js/disena.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/insertaImagen.js"></script>
+  <script src="js/selectSkills.js"></script>
 
 </body>
 

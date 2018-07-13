@@ -24,7 +24,7 @@
 
 .section--top__card {
   width: 240px;
-  height: 367px;
+  height: 378px;
   background-color: $color-light;
   margin: auto;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
@@ -36,6 +36,7 @@
   color: $color-tertiary;
   font-weight: $font-weight-thick;
   margin: 20px 14px 5px 20px;
+  padding-top: 5px;
 }
 
 .card__subtitle {
@@ -44,6 +45,7 @@
   font-size: $font-size-medium;
   font-weight: $font-weight-light;
   margin: 0 67px 10px 20px;
+  width: 100%;
 }
 
 .photo {
@@ -80,7 +82,7 @@
 
 .card__skills {
   list-style: none;
-  margin: 0 82px 0 15px;
+  width: 100%;
 }
 
 .card__skills--icon {
@@ -88,12 +90,13 @@
   border-radius: 4px;
   background-color: $color-secundary;
   text-align: center;
+  padding: 0 5px;
+  margin: 3px;
 }
 
 .icon__text {
   font-size: $font-size-xsmall;
   color: $color-light;
-  font-family: $font-family-primary, sans-serif;
   font-weight: $font-weight-light;
   line-height: normal;
   padding: 0 5px;
@@ -178,11 +181,20 @@
   margin-right: 20px;
 }
 
+.input__img-hiddenField {
+  display: none;
+}
+
 .box--previmg {
   width: 30px;
   height: 30px;
   border: solid $color-light-medium-dark 1px;
 }
+
+.preview {
+  width: 100%;
+}
+
 
 .container__skills--stuffed {
   display: flex;
@@ -212,7 +224,13 @@
 /* FORMULARIO */
 
 .form2--stuffed {
-  border: 0;
+  width: 281px;
+  margin: auto;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .form2__wrapper {
@@ -273,4 +291,15 @@
 
 .line2 {
   margin-bottom: 30px;
+}
+
+.container-select{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-collapsible{
+
+  transition: all linear 5s;
 }

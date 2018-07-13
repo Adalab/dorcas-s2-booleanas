@@ -25,6 +25,28 @@ function updateCollapsibles(e) {
     padreCollapsibleLabel.classList.add('collapsible--visible');
   }
 
+  var dataCol = padreCollapsibleLabel.getAttribute('data-valor');
+  var dataIcon = document.querySelectorAll('.icon-collapsible');
+
+  for(i = 0; i < dataIcon.length; i++){
+    if (dataIcon[i].getAttribute('data-valor') == dataCol){
+      if (dataIcon[i].classList.contains('fa-chevron-down')){
+        console.log("arriba");
+         dataIcon[i].classList.remove('fa-chevron-down');
+          dataIcon[i].classList.add('fa-chevron-up');
+         
+      } else if (dataIcon[i].classList.contains('fa-chevron-up')) {
+        console.log("abajo");
+        dataIcon[i].classList.remove('fa-chevron-up');
+        dataIcon[i].classList.add('fa-chevron-down');
+        
+      }
+    }
+  }
+
+  console.log("data", dataCol);
+
+
 }
 
 //funcion que va elimininando la clase collapsible--visible 

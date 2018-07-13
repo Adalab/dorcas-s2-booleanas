@@ -129,61 +129,65 @@
 
 .primary-palette {
   .card__title {
-    color: #114e4e;
+    color: $color-tertiary;
   }
   .card__media--icon {
-    border: 2px solid #a2deaf;
+    border: 2px solid $color-light-medium-dark;
   }
   .icon-card-color {
-    color: #114e4e;
+    color: $color-tertiary;
   }
   .card__skills--icon {
-    background-color: #438792;
+    background-color: $color-secundary;
+    color:$color-light;
   }
 }
 
 .secondary-palette {
   .card__title {
-    color: #420101;
+    color: $color-dark-medium;
   }
   .card__media--icon {
-    border: 2px solid #e17334;
+    border: 2px solid $color-primary;
   }
   .icon-card-color {
-    color: #420101;
+    color: $color-dark-medium;
   }
   .card__skills--icon {
-    background-color: #bd1010;
+    background-color: $color-dark-light;
+    color:$color-light;
   }
 }
 
 .tertiary-palette {
   .card__title {
-    color: #3e5b65;
+    color: $color-medium-light;
   }
   .card__media--icon {
-    border: 2px solid #dfe5eb;
+    border: 2px solid $color-light-light;
   }
   .icon-card-color {
-    color: #3e5b65;
+    color: $color-medium-light;
   }
   .card__skills--icon {
-    background-color: #a0c0cf;
+    background-color: $color-light-dark;
+    color:$color-light;
   }
 }
 
 .hearts-palette {
   .card__title {
-    color: #E82378;
+    color: $color-hearts1;
   }
   .card__media--icon {
-    border: 2px solid #FF7FA2;
+    border: 2px solid $color-hearts3;
   }
   .icon-card-color {
-    color: #E82378;
+    color: $color-hearts1;
   }
   .card__skills--icon {
-    background-color: #A6387A;
+    background-color: $color-hearts2;
+    color:$color-light;
   }
 }
 
