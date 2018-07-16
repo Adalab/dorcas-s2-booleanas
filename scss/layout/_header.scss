@@ -13,6 +13,7 @@
 
 .header__logo {
   width: 250px;
+  background-color: white;
 }
 
 
@@ -22,9 +23,14 @@
 
 .header--tarjeta {
   padding: 30px 79px 30px 40px;
+  background-image: url(../../images/bg-hearts2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .header__logo--tarjeta {
   width: 201px;
   height: 51px;
+  background-color: white;
 }
