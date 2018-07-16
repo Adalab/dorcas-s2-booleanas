@@ -5,7 +5,15 @@
 	},
 	"js": {
 		"src": [
-			"js/main.js"
+			"js/main.js",
+			"js/desplegables.js",
+			"js/disena.js",
+			"js/local.js",
+			"js/form.js",
+			"js/insertaImagen.js",
+			"js/selectSkills.js",
+			"js/creaTarjeta.js",
+			"js/mandarTweet.js"
 		],
 		"dest": "js/"
 	},
