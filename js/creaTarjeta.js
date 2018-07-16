@@ -58,11 +58,11 @@ function sendRequest(json){
 var twitterURL;
 function showURL(result){
   var texto = document.querySelector('.container__twitter--title');
-  var btnTarjeta = document.querySelector('.form2__button')
+  var btnTarjeta = document.querySelector('.form2__button');
   if(result.success){
-     
-     texto.innerHTML = '<h3 class="twitter-title">La tarjeta ha sido creada:</h3>';
-     responseURL.innerHTML = '<a class="link--response" href=' + result.cardURL + '>' + result.cardURL + '</a>';
+
+    texto.innerHTML = '<h3 class="twitter-title">La tarjeta ha sido creada:</h3>';
+    responseURL.innerHTML = '<a class="link--response"  href=' + result.cardURL + ' target="_blank" >' + result.cardURL + '</a>';
     btnTarjeta.disabled = true;
     btnTarjeta.classList.add('disabled');
 
@@ -74,12 +74,11 @@ function showURL(result){
 }
 
 function shareOnTwitter(){
- 
+
 
   linkTwitter.href = 'https://twitter.com/intent/tweet?url=' + twitterURL + '&text=Acabo%20de%20crear%20mi%20tarjeta%20con%20Font%20Awesome%20de%20Queens%20of%20hearts&hashtags=WomenInTech';
 
 
-  
 
 }
 

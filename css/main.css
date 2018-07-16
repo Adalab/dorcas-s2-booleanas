@@ -943,6 +943,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media all and (min-width: 768px) {
   .footer {
     height: 60px;
