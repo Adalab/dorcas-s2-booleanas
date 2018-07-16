@@ -149,7 +149,6 @@
 
 .header__logo {
   width: 250px;
-  background-color: white;
 }/* HEADER TARJETA */.header--tarjeta {
   padding: 30px 79px 30px 40px;
   background-image: url(../../images/bg-hearts2.png);
