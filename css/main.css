@@ -37,6 +37,18 @@
   font-size: 18px;
 }
 
+.btn-twitter {
+  width: 181px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #00a0f5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  border-style: none;
+}
+
 .footer__span {
   font-size: 14px;
 }
@@ -188,6 +200,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #e17334;
+  margin-right: 10px;
 }
 
 .icon-chevron-up-desing {
@@ -772,6 +785,48 @@
 .icon-collapsible {
   -webkit-transition: all linear 5s;
   transition: all linear 5s;
+}
+
+.container__twitter {
+  border-bottom: solid #d8d8d8 1px;
+  border-top: solid #d8d8d8 1px;
+  padding: 20px 0 20px 0;
+}
+
+.twitter-title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  text-align: center;
+}
+
+.response {
+  text-align: center;
+}
+
+.link--response {
+  font-family: "Open Sans", sans-serif;
+  color: #e17334;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container__btn-twitter {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link-twitter {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+
+.disabled {
+  background-color: #d8d8d8;
 }
 
 .page__wrapper {

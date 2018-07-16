@@ -9,6 +9,7 @@ var sectionCard = document.querySelector('.section--top__card');
 function seleccionColor(e) {
 
   var id = e.target;
+  console.log(id.value)
   var paleta1 = 'paleta-primary';
   var paleta2 = 'paleta-secondary';
   var paleta3 = 'paleta-tertiary';
@@ -57,7 +58,7 @@ function seleccionFuente(e) {
   var font1 = 'style-fonts1';
   var font2 = 'style-fonts2';
   var font3 = 'style-fonts3';
-  var font4 = 'style-fonts4'
+  var font4 = 'style-fonts4';
   console.log(id.id);
   if (id.id === font1) {
     

@@ -303,3 +303,51 @@
 
   transition: all linear 5s;
 }
+
+.container__twitter{
+  border-bottom: solid $color-light-medium-light 1px;
+  border-top: solid $color-light-medium-light 1px;
+  padding: 20px 0 20px 0;
+
+}
+
+
+
+.twitter-title {
+  font-size: $font-size-large;
+  font-family: $font-family-primary;
+  color: $color-medium;
+  text-align: center;
+
+}
+
+.response{
+  text-align: center;
+}
+
+.link--response{
+   font-family: $font-family-primary;
+   color: $color-primary;
+   text-decoration: none;
+   cursor: pointer;
+   
+}
+.container__btn-twitter{
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.link-twitter{
+text-decoration: none;
+  font-size: $font-size-small;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-light;
+  font-size: $font-size-small;
+  color: $color-light;
+}
+
+.disabled{
+  background-color: $color-light-medium-light;
+  
+}

@@ -4,15 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title></title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900|Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title></title>
+  <title>Tarjeta</title>
 
 </head>
 
@@ -33,27 +31,27 @@
             </button>
           </div>
           <div class="section--top__card primary-palette">
-            <span class="card__title font__style-font1" id="card--name">Nombre Apellido</span>
-            <span class="card__subtitle" id="card--job">Front-end developer</span>
+            <span class="card__title font__style-font1 localcard--name" id="card--name">Nombre Apellido</span>
+            <span class="card__subtitle" id="card--job localcard--job">Front-end developer</span>
             <img class="photo" src="https://picsum.photos/240/200" alt="foto">
 
             <ul class="card__media">
-              <a id="tlf" href="">
+              <a class="localcard--phone" id="tlf" href="" target="_blank">
                 <li class="card__media--icon">
                   <i class="fas fa-mobile-alt icon-card-color"></i>
                 </li>
               </a>
-              <a id="email" href="">
+              <a class="localcard--email" id="email" href="" target="_blank">
                 <li class="card__media--icon">
                   <i class="far fa-envelope icon-card-color"></i>
                 </li>
               </a>
-              <a id="linkedin" href="">
+              <a class="localcard--linkedin" id="linkedin" href="" target="_blank">
                 <li class="card__media--icon">
                   <i class="fab fa-linkedin-in icon-card-color"></i>
                 </li>
               </a>
-              <a id="github" href="">
+              <a class="localcard--github" id="github" href="" target="_blank">
                 <li class="card__media--icon">
                   <i class="fab fa-github-alt icon-card-color"></i>
                 </li>
@@ -80,9 +78,9 @@
     <!-- FORMULARIO -->
     <!-- DISEÑA -->
     <div class="main__section-form">
-      <form class="form" action="">
+      <form class="form" action="" method="post">
         <fieldset class="container__colors-fonts">
-          <div class="collapsible__container collapsible--visible" data-valor="1";>
+          <div class="collapsible__container collapsible--visible" data-valor="1" ;>
             <div class="title__section-desing-container collapsible__label">
               <div class="title__section-title">
                 <legend class="title__section-desing-title ">
@@ -91,196 +89,212 @@
                   </span> diseña</legend>
               </div>
               <div class="title__section-icon">
-                <i class="fas fa-chevron-up icon-chevron-up-desing icon-collapsible"  data-valor="1"></i>
+                <i class="fas fa-chevron-up icon-chevron-up-desing icon-collapsible" data-valor="1"></i>
               </div>
             </div>
             <div class="collapsible__content">
-                <div class="form__container-radio">
-                  <div class="label__design">
-                    <label class="label-block" for="">colores</label>
-                  </div>
-                  <div class="input__design">
-                    <label class="block first-block" for="paleta-primary">
-                      <input class="radio-colors select-style" type="radio" value="radio" id="paleta-primary" name="radio-colors" checked>
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="paleta-primary" class="color color__paleta-primary1"></label>
-                        <label for="paleta-primary" class="color color__paleta-primary2"></label>
-                        <label for="paleta-primary" class="color color__paleta-primary3"></label>
-                      </div>
-                    </label>
-
-                    <label class="block" for="paleta-secondary">
-                      <input class="radio-colors select-style" type="radio" id="paleta-secondary" name="radio-colors">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="paleta-secondary" class="color color__paleta-secondary1"></label>
-                        <label for="paleta-secondary" class="color color__paleta-secondary2"></label>
-                        <label for="paleta-secondary" class="color color__paleta-secondary3"></label>
-                      </div>
-                    </label>
-                    <label class="block" for="paleta-tertiary">
-                      <input class="radio-colors select-style" type="radio" id="paleta-tertiary" name="radio-colors">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="paleta-tertiary" class="color color__paleta-tertiary1"></label>
-                        <label for="paleta-tertiary" class="color color__paleta-tertiary2"></label>
-                        <label for="paleta-tertiary" class="color color__paleta-tertiary3"></label>
-                      </div>
-                    </label>
-                    <label class="block" for="paleta-hearts">
-                      <input class="radio-colors select-style" type="radio" id="paleta-hearts" name="radio-colors">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="paleta-hearts" class="color color__paleta-hearts1"></label>
-                        <label for="paleta-hearts" class="color color__paleta-hearts2"></label>
-                        <label for="paleta-hearts" class="color color__paleta-hearts3"></label>
-                      </div>
-                    </label>
-
-                  </div>
+              <div class="form__container-radio">
+                <div class="label__design">
+                  <label class="label-block" for="">colores</label>
                 </div>
+                <div class="input__design">
+                  <label class="block first-block" for="paleta-primary">
+                    <input class="radio-colors select-style" type="radio" value="1" id="paleta-primary" name="palette" checked>
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="paleta-primary" class="color color__paleta-primary1"></label>
+                      <label for="paleta-primary" class="color color__paleta-primary2"></label>
+                      <label for="paleta-primary" class="color color__paleta-primary3"></label>
+                    </div>
+                  </label>
 
-                <div class="form__container-radio top-container-radiofont">
-                  <div class="label__design">
-                    <label class="label-block" for="">fuentes</label>
-                  </div>
-                  <div class="input__design">
-                    <label class="block first-block" for="style-fonts1">
-                      <input class="radio-fonts select-style" type="radio" id="style-fonts1" name="radio-fonts" checked>
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="style-fonts" class="font__style-font1">ubuntu</label>
-                      </div>
-                    </label>
-                    <label class="block" for="style-fonts2">
-                      <input class="radio-fonts select-style" type="radio" id="style-fonts2" name="radio-fonts">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="style-fonts2" class="font__style-font2">comic sans</label>
-                      </div>
-                    </label>
-                    <label class="block" for="style-fonts3">
-                      <input class="radio-fonts select-style" type="radio" id="style-fonts3" name="radio-fonts">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="style-fonts3" class="font__style-font3">montserrat</label>
-                      </div>
-                    </label>
-                    <label class="block" for="style-fonts4">
-                      <input class="radio-fonts select-style" type="radio" id="style-fonts4" name="radio-fonts">
-                      <span class="checkmark"></span>
-                      <div class="radio__options">
-                        <label for="style-fonts4" class="font__style-font4">pacifico</label>
-                      </div>
-                    </label>
-                  </div>
+                  <label class="block" for="paleta-secondary">
+                    <input class="radio-colors select-style" type="radio" value="2" id="paleta-secondary" name="palette">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="paleta-secondary" class="color color__paleta-secondary1"></label>
+                      <label for="paleta-secondary" class="color color__paleta-secondary2"></label>
+                      <label for="paleta-secondary" class="color color__paleta-secondary3"></label>
+                    </div>
+                  </label>
+                  <label class="block" for="paleta-tertiary">
+                    <input class="radio-colors select-style" type="radio" value="3" id="paleta-tertiary" name="palette">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="paleta-tertiary" class="color color__paleta-tertiary1"></label>
+                      <label for="paleta-tertiary" class="color color__paleta-tertiary2"></label>
+                      <label for="paleta-tertiary" class="color color__paleta-tertiary3"></label>
+                    </div>
+                  </label>
+                  <label class="block" for="paleta-hearts">
+                    <input class="radio-colors select-style" type="radio" value="4" id="paleta-hearts" name="palette">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="paleta-hearts" class="color color__paleta-hearts1"></label>
+                      <label for="paleta-hearts" class="color color__paleta-hearts2"></label>
+                      <label for="paleta-hearts" class="color color__paleta-hearts3"></label>
+                    </div>
+                  </label>
+
                 </div>
+              </div>
+
+              <div class="form__container-radio top-container-radiofont">
+                <div class="label__design">
+                  <label class="label-block" for="">fuentes</label>
+                </div>
+                <div class="input__design">
+                  <label class="block first-block" for="style-fonts1">
+                    <input class="radio-fonts select-style" type="radio" value="1" id="style-fonts1" name="typography" checked>
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="style-fonts" class="font__style-font1">ubuntu</label>
+                    </div>
+                  </label>
+                  <label class="block" for="style-fonts2">
+                    <input class="radio-fonts select-style" type="radio" value="2" id="style-fonts2" name="typography">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="style-fonts2" class="font__style-font2">comic sans</label>
+                    </div>
+                  </label>
+                  <label class="block" for="style-fonts3">
+                    <input class="radio-fonts select-style" type="radio" value="3" id="style-fonts3" name="typography">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="style-fonts3" class="font__style-font3">montserrat</label>
+                    </div>
+                  </label>
+                  <label class="block" for="style-fonts4">
+                    <input class="radio-fonts select-style" type="radio" value="4" id="style-fonts4" name="typography">
+                    <span class="checkmark"></span>
+                    <div class="radio__options">
+                      <label for="style-fonts4" class="font__style-font4">pacifico</label>
+                    </div>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </fieldset>
         <!-- RELLENA -->
-            <fieldset class="subsection--stuffed">
-              <div class="collapsible__container" data-valor="2">
-                <div class="title__section-desing-container collapsible__label">
-                  <div class="title__section-title">
-                    <legend class="title__section-desing-title ">
-                      <span>
-                        <i class="far fa-keyboard section-stuffed__icon"></i>
-                      </span>rellena</legend>
-                  </div>
-                  <div class="title__section-icon">
-                    <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="2"></i>
-                  </div>
-                </div>
-              <div class="collapsible__content">
-
-                <label class="label--stuffed" for="complete--name">Nombre completo</label>
-                <input class="input--stuffed input--text" data-elementos="card--name" placeholder="Ej: Sally Hill" id="complete--name" type="text"
-                  name="complete--name" value="">
-
-                <label class="label--stuffed" for="job">Puesto</label>
-                <input class="input--stuffed input--text" data-elementos="card--job" placeholder="Ej: Front-end unicorn" id="job" type="text"
-                  name="job" value="">
-
-                <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
-                <div class="div--stuffed__img">
-                  <button class="input--stuffed__img " type="button">Añadir imagen</button>
-                  <input class="input__img-hiddenField" id="img--profile" type="file">
-                  <div class="box--previmg">
-                    <img class="preview" src="" alt="">
-                  </div>
-                </div>
-
-                <label class="label--stuffed" for="email">Email</label>
-                <input class="input--stuffed input--href" data-href="email" placeholder="Ej: sally-hill@gmail.com" id="email" type="email"
-                  name="email" value="">
-
-                <label class="label--stuffed" for="tlf">Teléfono</label>
-                <input class="input--stuffed input--href" data-href="tlf" placeholder="Ej:555-555-555" id="tlf" type="tel" name="tlf" value="">
-
-                <label class="label--stuffed" for="lkd">Linkedin</label>
-                <input class="input--stuffed input--href" data-href="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="lkd" type="text"
-                  name="lkd" value="">
-
-                <label class="label--stuffed" for="gith">Github</label>
-                <input class="input--stuffed input--href" data-href="github" placeholder="Ej: @sally-hill" id="gith" type="text" name="gith"
-                  value="">
-
-                <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
-          
-                  <div class="label--stuffed__container-select">
-                  
-                  </div>
-                  <ul class="card__skills">
-                  
-                  </ul>
+        <fieldset class="subsection--stuffed">
+          <div class="collapsible__container" data-valor="2">
+            <div class="title__section-desing-container collapsible__label">
+              <div class="title__section-title">
+                <legend class="title__section-desing-title ">
+                  <span>
+                    <i class="far fa-keyboard section-stuffed__icon"></i>
+                  </span>rellena</legend>
               </div>
+              <div class="title__section-icon">
+                <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="2"></i>
               </div>
-            </fieldset>
+            </div>
+            <div class="collapsible__content">
 
-    <!-- COMPARTE -->
-    <fieldset class="form2--stuffed">
-      <div class="collapsible__container" data-valor="3">
-        <div class="title__section-desing-container collapsible__label">
-          <div class="title__section-title">
-            <legend class="title__section-desing-title ">
-              <span>
-                <i class="fas fa-share-alt form2__title--icon"></i>
-              </span>comparte</legend>
+              <label class="label--stuffed" for="name">Nombre completo</label>
+              <input class="input--stuffed input--text local--name" data-elementos="card--name" placeholder="Ej: Sally Hill" id="complete--name"
+                type="text" name="name" value="">
+
+              <label class="label--stuffed" for="job">Puesto</label>
+              <input class="input--stuffed input--text local--job" data-elementos="card--job" placeholder="Ej: Front-end unicorn" id="job"
+                type="text" name="job" value="">
+
+              <label class="label--stuffed" for="img--profile">Imagen de perfil</label>
+              <div class="div--stuffed__img">
+                <button class="input--stuffed__img " type="button">Añadir imagen</button>
+                <input class="input__img-hiddenField" name="photo" id="img--profile" type="file">
+                <div class="box--previmg">
+                  <img class="preview" src="" alt="">
+                </div>
+              </div>
+
+              <label class="label--stuffed" for="email">Email</label>
+              <input class="input--stuffed input--href local--email" data-href="email" placeholder="Ej: sally-hill@gmail.com" id="email"
+                type="email" name="email" value="">
+
+              <label class="label--stuffed" for="phone">Teléfono</label>
+              <input class="input--stuffed input--href local--phone" data-href="tlf" placeholder="Ej:555-555-555" id="tlf" type="tel" name="phone"
+                value="">
+
+              <label class="label--stuffed" for="linkedin">Linkedin</label>
+              <input class="input--stuffed input--href local--linkedin" data-href="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+                id="lkd" type="text" name="linkedin" value="">
+
+              <label class="label--stuffed" for="github">Github</label>
+              <input class="input--stuffed input--href local--github" data-href="github" placeholder="Ej: @sally-hill" id="gith" type="text"
+                name="github" value="">
+
+              <label class="label--stuffed" for="skills1">Habilidades (máximo 3)</label>
+
+              <div class="label--stuffed__container-select">
+
+              </div>
+              <ul class="card__skills">
+
+              </ul>
+            </div>
           </div>
-          <div class="title__section-icon">
-            <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="3"></i>
+        </fieldset>
+
+        <!-- COMPARTE -->
+        <fieldset class="form2--stuffed">
+          <div class="collapsible__container" data-valor="3">
+            <div class="title__section-desing-container collapsible__label">
+              <div class="title__section-title">
+                <legend class="title__section-desing-title ">
+                  <span>
+                    <i class="fas fa-share-alt form2__title--icon"></i>
+                  </span>comparte</legend>
+              </div>
+              <div class="title__section-icon">
+                <i class="fas fa-chevron-down icon-chevron-up-desing icon-collapsible" data-valor="3"></i>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="form2__button--container">
+                <button class="form2__button" id="btn-submit" type="button" name="button">
+                  <i class="far fa-address-card button--icon"></i>
+                  <span>CREAR TARJETA</span>
+                </button>
+              </div>
+              <div class="container__twitter">
+                <div class="container__twitter--title">
+                </div>
+                <p class="response"></p>
+                <div class="container__btn-twitter">
+                  <button class="btn-twitter">
+                   <i class="fab fa-twitter"></i> <a class="url-twitter link-twitter" href="" target="_blank">Compartir en twitter</a>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="collapsible__content">
-          <div class="form2__button--container">
-            <button class="form2__button" type="button" name="button">
-              <i class="far fa-address-card button--icon"></i>
-              <span>CREAR TARJETA</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-    </form>
+        </fieldset>
+      </form>
     </div>
   </main>
   <!-- FOOTER -->
   <footer class="footer">
     <span class="footer__span">Awesome profile-cards @2018</span>
-		    <a href="http://adalab.es/" target="_blank" class="button-adalab">
-      <img src="images/logo-adalab.png" alt="enlace adalab" class="button--adalab__img"></a>
-      <img src="images/logo-queens.png" alt="logo queens of hearts" class="logo-hearts__img">
+    <a href="http://adalab.es/" target="_blank" class="button-adalab">
+      <img src="images/logo-adalab.png" alt="enlace adalab" class="button--adalab__img">
+    </a>
+    <img src="images/logo-queens.png" alt="logo queens of hearts" class="logo-hearts__img">
   </footer>
   </section>
 
   <script src="js/main.js"></script>
   <script src="js/desplegables.js"></script>
   <script src="js/disena.js"></script>
+  <script src="js/local.js"></script>
   <script src="js/form.js"></script>
   <script src="js/insertaImagen.js"></script>
   <script src="js/selectSkills.js"></script>
+  <script src="js/creaTarjeta.js"></script>
+  <script src="js/mandarTweet.js"></script>
+
 
 </body>
 
