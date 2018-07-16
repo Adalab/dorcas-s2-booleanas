@@ -8,9 +8,11 @@ function updateCard(event) {
   var inputElement = event.currentTarget;
   var targetID = inputElement.getAttribute('data-elementos');
   var nameLocal = event.currentTarget.name;
- 
+  console.log("input", inputElement);
+  console.log("targetId", targetID);
+  console.log("namelocal", nameLocal);
   saveLocalStorage(nameLocal, inputElement.value);
-  
+  console.log("input value", inputElement.value);
   document.querySelector('#' + targetID).innerHTML = inputElement.value;
 }
 

@@ -13,6 +13,7 @@ var localValue = {
 };
 var datos = document.querySelectorAll ('.input--stuffed');
 var btnCreaTarjeta = document.querySelector('.form2__button');
+var buttonReset = document.querySelector('.button');
 function saveLocalStorage(id, value){
   console.log('id y value', id, value);
   var updateLocalValue = [];
@@ -22,7 +23,7 @@ function saveLocalStorage(id, value){
   updateLocalValue[0] = localValue;
   console.log(updateLocalValue);
   localStorage.setItem('localValue', JSON.stringify(updateLocalValue));
-  var form = document.querySelector(".form");
+  var form = document.querySelector('.form');
   console.log(updateLocalValue);
 }
 var form = document.querySelector('.form');
@@ -30,7 +31,7 @@ var form = document.querySelector('.form');
 function crearLocalStorage () {
   var json = JSON.parse(localStorage.getItem('localValue'));
   var updateLocalValue= json;
-  console.log("get localstorage", updateLocalValue);
+  console.log('get localstorage', updateLocalValue);
   console.log(updateLocalValue[0].name);
   var name = document.querySelector('#complete--name');
   var job = document.querySelector('#job');
@@ -54,11 +55,11 @@ crearLocalStorage();
 
 
 
-
 // var json = JSON.parse(localStorage.getItem('localValue'));
 // loadLocalStorage(json);
-// var buttonReset = document.querySelector('.button');
+
 // function reset(event) {
+//   alert("prueba");
 //   localStorage.setItem('localValue', JSON.stringify(localValue));
 //   loadLocalStorage(localValue);
 // }
