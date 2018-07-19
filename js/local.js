@@ -64,14 +64,14 @@ function reset() {
 
   var json = JSON.parse(localStorage.getItem('localValue'));
   json = [];
-  var name = document.querySelector('#complete--name').value = "";
-  var job = document.querySelector('#job').value = "";
-  var email = document.querySelector('#email.input--stuffed').value = "";
-  var tlf = document.querySelector('#tlf.input--stuffed').value = "";
-  var lkd = document.querySelector('#lkd').value = "";
-  var git = document.querySelector('#gith').value = "";
-  var cardName = document.querySelector('#card--name').innerHTML = "Nombre Apellido";
-  var cardJob = document.querySelector('#card--job').innerHTML = "Front-end developer";
+  var name = document.querySelector('#complete--name').value = '';
+  var job = document.querySelector('#job').value = '';
+  var email = document.querySelector('#email.input--stuffed').value = '';
+  var tlf = document.querySelector('#tlf.input--stuffed').value = '';
+  var lkd = document.querySelector('#lkd').value = '';
+  var git = document.querySelector('#gith').value = '';
+  var cardName = document.querySelector('#card--name').innerHTML = 'Nombre Apellido';
+  var cardJob = document.querySelector('#card--job').innerHTML = 'Front-end developer';
   localStorage.setItem('localValue', JSON.stringify(json));
 
 }
