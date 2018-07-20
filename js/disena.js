@@ -6,7 +6,7 @@
 const radioColors = document.querySelectorAll('.radio-colors');
 const sectionCard = document.querySelector('.section--top__card');
 
-function seleccionColor(e) {
+const seleccionColor = (e) => {
 
   const id = e.target;
   console.log(id.value)
@@ -33,7 +33,7 @@ function seleccionColor(e) {
   }
 }
 
-function eliminarColor() {
+const eliminarColor = () => {
   sectionCard.classList.remove('primary-palette');
   sectionCard.classList.remove('secondary-palette');
   sectionCard.classList.remove('tertiary-palette');
@@ -53,7 +53,7 @@ const skills = document.querySelectorAll('.icon__text');
 
 
 
-function seleccionFuente(e) {
+const seleccionFuente = (e) => {
   const id = e.target;
   const font1 = 'style-fonts1';
   const font2 = 'style-fonts2';
@@ -108,7 +108,7 @@ function seleccionFuente(e) {
   }
 }
 
-function eliminaFuente(font) {
+const eliminaFuente = (font) => {
 
 console.log("eliminar ", font);
 
