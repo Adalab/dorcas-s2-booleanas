@@ -15,10 +15,9 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
   })
   .then(function (json) {
     const skills = [];
-    for (let i = 0; i < json.skills.length; i++) {
 
-      skills[i] = json.skills[i];
-
+    for (let skillItem of json.skills) {
+      skills.push(skillItem);
     }
 
     const añadeSelect = (e) => {
@@ -30,12 +29,12 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
       if (boton.firstChild.className === 'fas fa-plus') {
         if (contador < 3) {
           contador++;
-          boton.innerHTML = `${minus}`;
+          boton.innerHTML = minus;
           creaSelect();
           botones(btn);
         }
       } else {
-        boton.innerHTML = `${plus}`;
+        boton.innerHTML = plus;
         borraSelect();
         botones(btn);
       }
@@ -44,17 +43,11 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
     const botones = (btn) => {
 
       btn = document.querySelectorAll('.btn-select');
-      // Hacer un map
-      for (let i = 0; i < btn.length; i++) {
 
-        btn[i].addEventListener('click', añadeSelect);
-
+      for (const button of btn) {
+        button.addEventListener('click', añadeSelect);
       }
       console.log(btn.length);
-
-      // btn.map(function(button) {
-      //   return button.addEventListener('click', añadeSelect);
-      // });
     };
 
     const actualizaTarjeta = () => {
@@ -66,7 +59,7 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
 
       for (let i = 0; i < listSelects.length; i++) {
         spans[i].innerHTML = '';
-        spans[i].innerHTML = `${listSelects[i].value}`;
+        spans[i].innerHTML = listSelects[i].value;
       }
     };
 
@@ -86,9 +79,9 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
 
       const container = document.createElement('div');
 
-      for (let i = 0; i < skills.length; i++) {
+      for (const skill of skills) {
         const newOption = document.createElement('option');
-        const optionText = document.createTextNode(skills[i]);
+        const optionText = document.createTextNode(skill);
         newOption.appendChild(optionText);
         newSelect.appendChild(newOption);
         container.classList.add('container-select');
@@ -106,7 +99,6 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
       contenedor = document.querySelector('.label--stuffed__container-select');
       contenedor.removeChild(contenedor.lastChild);
       contador--;
-      //actualizaTarjeta();
     };
     creaSelect();
     botones();
