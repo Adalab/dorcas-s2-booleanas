@@ -4,7 +4,7 @@ const inputDataText = document.querySelectorAll('.input--text');
 //INPUTS HREF
 const inputDataHref = document.querySelectorAll('.input--href');
 
-function updateCard(event) {
+const updateCard = (event) => {
   const inputElement = event.currentTarget;
   const targetID = inputElement.getAttribute('data-elementos');
   const nameLocal = event.currentTarget.name;
@@ -16,7 +16,7 @@ for (let inputItem of inputDataText) {
   inputItem.addEventListener('keyup', updateCard);
 }
 
-function updateHrefCard(event) {
+const updateHrefCard = (event) => {
   const inputHref = event.currentTarget;
   const targetHref = inputHref.getAttribute('data-href');
   const hrefNameLocal = event.currentTarget.name;
