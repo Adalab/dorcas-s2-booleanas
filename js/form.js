@@ -30,6 +30,5 @@ function updateHrefCard(event) {
 
 for (var i = 0; i < inputDataHref.length; i++) {
   inputDataHref[i].addEventListener('keyup', updateHrefCard);
-
 }
 
