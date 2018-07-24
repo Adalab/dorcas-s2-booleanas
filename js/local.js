@@ -20,7 +20,7 @@ const localValue = {
 const saveLocalStorage = (id, value) => {
   // console.log('id y value', id, value);
   const updateLocalValue = [];
-  // console.log(updateLocalValue);
+  console.log(updateLocalValue);
   localValue[id] = value;
   // console.log(localValue);
   updateLocalValue[0] = localValue;
@@ -44,14 +44,14 @@ const crearLocalStorage = () => {
   const cardName = document.querySelector('#card--name');
   const cardJob = document.querySelector('#card--job');
 
-  // name.value = updateLocalValue[0].name;
-  // job.value = updateLocalValue[0].job;
-  // email.value = updateLocalValue[0].email;
-  // tlf.value = updateLocalValue[0].phone;
-  // lkd.value = updateLocalValue[0].linkedin;
-  // git.value = updateLocalValue[0].github;
-  // cardName.innerHTML = updateLocalValue[0].name;
-  // cardJob.innerHTML = updateLocalValue[0].job;
+  name.value = updateLocalValue[0].name;
+  job.value = updateLocalValue[0].job;
+  email.value = updateLocalValue[0].email;
+  tlf.value = updateLocalValue[0].phone;
+  lkd.value = updateLocalValue[0].linkedin;
+  git.value = updateLocalValue[0].github;
+  cardName.innerHTML = updateLocalValue[0].name;
+  cardJob.innerHTML = updateLocalValue[0].job;
 };
 
 // var json = JSON.parse(localStorage.getItem('localValue'));
@@ -74,40 +74,3 @@ const reset = () => {
 crearLocalStorage();
 
 buttonReset.addEventListener('click', reset);
-
-
-// // ES5
-// const button = document.querySelector('.btn-submit');
-// button.addEventListener('click', function() {
-//   console.log('Hello from an anonymous function');
-// });
-
-// // ES6
-// const button = document.querySelector('.btn-submit');
-// button.addEventListener('click', () => {
-//   console.log('Hello from an anonymous function');
-// });
-
-
-// // ES5
-// const printSomething = function() {
-//   console.log('Hmmm... something!');
-// }
-
-// // ES6
-// const printSomething = () => {
-//   console.log('Hmmm... something!');
-// };
-
-
-// // ES5
-// function rectArea(x, y) {
-//   return x * y;
-// }
-
-// // ES6
-// const rectArea = (x, y) => {
-//   return x * y;
-// };
-
-// const rectArea = (x, y) => x * y;
