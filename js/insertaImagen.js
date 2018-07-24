@@ -1,37 +1,38 @@
 'use strict';
 
-var fr = new FileReader();
+const fr = new FileReader();
+const btnImg = document.querySelector('.input--stuffed__img');
+const inputImg = document.querySelector('#img--profile');
+const profileImg = document.querySelector('.photo');
+const preview = document.querySelector('.preview');
 
-var btnImg = document.querySelector('.input--stuffed__img');
-var inputImg = document.querySelector('#img--profile');
-var profileImg = document.querySelector('.photo');
-var preview = document.querySelector('.preview');
+// function writeImage() {
+//   profileImg.src = fr.result;
+//   preview.src = fr.result;
+// }
 
-
-
-function getImage(e) {
-
-  var myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
-  fr.readAsDataURL(myFile);
-
-}
-
-function writeImage() {
-
+const writeImage = () => {
   profileImg.src = fr.result;
   preview.src = fr.result;
-}
+};
 
+// function getImage(e) {
+//   const myFile = e.currentTarget.files[0];
+//   fr.addEventListener('load', writeImage);
+//   fr.readAsDataURL(myFile);
+// }
 
+const getImage = (e) => {
+  const myFile = e.currentTarget.files[0];
+  fr.addEventListener('load', writeImage);
+  fr.readAsDataURL(myFile);
+};
 
-function inputClick() {
+// function inputClick() {
+//   inputImg.click();
+// }
 
-  inputImg.click();
-
-
-}
-
+const inputClick = () => inputImg.click();
 
 inputImg.addEventListener('change', getImage);
 btnImg.addEventListener('click', inputClick);
