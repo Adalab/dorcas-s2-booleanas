@@ -164,7 +164,6 @@
 }
 
 .container__colors-fonts {
-  width: 280px;
   margin: 0 auto;
   padding-bottom: 30px;
   border-bottom: 1px solid #d8d8d8;
@@ -600,7 +599,6 @@
 }
 
 .subsection--stuffed {
-  width: 281px;
   margin: auto;
   border: none;
   border-bottom: solid #d8d8d8 1px;
@@ -690,7 +688,6 @@
   text-transform: uppercase;
   padding-left: 5px;
 }/* FORMULARIO */.form2--stuffed {
-  width: 281px;
   margin: auto;
   border: none;
   display: -webkit-box;
@@ -832,6 +829,11 @@
 
 .disabled {
   background-color: #d8d8d8;
+}
+
+.form {
+  min-width: 399px;
+  margin: 27px 30px 20px 40px;
 }
 
 .page__wrapper {
@@ -988,6 +990,7 @@ a {
 
   .main__section-card {
     height: 100%;
+    width: 100%;
   }
 
   .section--top {
@@ -999,6 +1002,9 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .header__logo {

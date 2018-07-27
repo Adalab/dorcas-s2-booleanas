@@ -137,7 +137,6 @@
 }
 
 .subsection--stuffed {
-  width: 281px;
   margin: auto;
   border: none;
   border-bottom: solid $color-light-medium-light 1px;
@@ -225,7 +224,6 @@
 /* FORMULARIO */
 
 .form2--stuffed {
-  width: 281px;
   margin: auto;
   border: none;
   display: -webkit-box;
@@ -331,7 +329,7 @@
    color: $color-primary;
    text-decoration: none;
    cursor: pointer;
-   
+
 }
 .container__btn-twitter{
   text-align: center;
@@ -350,5 +348,10 @@ text-decoration: none;
 
 .disabled{
   background-color: $color-light-medium-light;
-  
+
+}
+
+.form {
+  min-width: 399px;
+  margin: 27px 30px 20px 40px;
 }
