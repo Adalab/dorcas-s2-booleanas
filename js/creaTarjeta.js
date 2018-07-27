@@ -3,7 +3,7 @@
 var submitButton = document.querySelector('#btn-submit');
 var responseURL = document.querySelector('.response');
 var form = document.querySelector('.form');
-var fr = new FileReader();
+// var fr = new FileReader();
 var buttonTwitter = document.querySelector('.btn-twitter');
 
 var linkTwitter = document.querySelector('.url-twitter');

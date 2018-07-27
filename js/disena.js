@@ -3,17 +3,17 @@
 
 //SECCION DISEÑA COLORES//
 
-var radioColors = document.querySelectorAll('.radio-colors');
-var sectionCard = document.querySelector('.section--top__card');
+const radioColors = document.querySelectorAll('.radio-colors');
+const sectionCard = document.querySelector('.section--top__card');
 
-function seleccionColor(e) {
+const seleccionColor = (e) => {
 
-  var id = e.target;
+  const id = e.target;
   console.log(id.value)
-  var paleta1 = 'paleta-primary';
-  var paleta2 = 'paleta-secondary';
-  var paleta3 = 'paleta-tertiary';
-  var paleta4 = 'paleta-hearts';
+  const paleta1 = 'paleta-primary';
+  const paleta2 = 'paleta-secondary';
+  const paleta3 = 'paleta-tertiary';
+  const paleta4 = 'paleta-hearts';
   console.log(id.id);
   if (id.id === paleta1) {
     eliminarColor();
@@ -33,81 +33,82 @@ function seleccionColor(e) {
   }
 }
 
-function eliminarColor() {
+const eliminarColor = () => {
   sectionCard.classList.remove('primary-palette');
   sectionCard.classList.remove('secondary-palette');
   sectionCard.classList.remove('tertiary-palette');
   sectionCard.classList.remove('hearts-palette');
 }
 
-for (var i = 0; i < radioColors.length; i++) {
-  radioColors[i].addEventListener('click', seleccionColor);
+for (let itemColors of radioColors) {
+  itemColors.addEventListener('click', seleccionColor);
 }
 
 //SECCION DISEÑA FUENTES//
 
-var radioFonts = document.querySelectorAll('.radio-fonts');
-var titulo = document.querySelector('.card__title');
-var subtitulo = document.querySelector('.card__subtitle');
-var skills = document.querySelectorAll('.icon__text');
+const radioFonts = document.querySelectorAll('.radio-fonts');
+const titulo = document.querySelector('.card__title');
+const subtitulo = document.querySelector('.card__subtitle');
+const skills = document.querySelectorAll('.icon__text');
 
 
 
-function seleccionFuente(e) {
-  var id = e.target;
-  var font1 = 'style-fonts1';
-  var font2 = 'style-fonts2';
-  var font3 = 'style-fonts3';
-  var font4 = 'style-fonts4';
+const seleccionFuente = (e) => {
+  const id = e.target;
+  const font1 = 'style-fonts1';
+  const font2 = 'style-fonts2';
+  const font3 = 'style-fonts3';
+  const font4 = 'style-fonts4';
   console.log(id.id);
   if (id.id === font1) {
     
-    var fonClass1 = 'font__style-font1';
+    const fonClass1 = 'font__style-font1';
     eliminaFuente(fonClass1);
     titulo.classList.add('font__style-font1');
     subtitulo.classList.add('font__style-font1');
-    for(var i = 0 ; i < skills.length; i++){
-      console.log(skills[i]);
-      skills[i].classList.add('font__style-font1');
+    for(let itemFonts of skills){
+      console.log('${itemFonts}');
+      itemFonts.classList.add('font__style-font1');
     }
 
   }
   if (id.id === font2) {
     
-    var fonClass2 = 'font__style-font2';
+    const fonClass2 = 'font__style-font2';
     eliminaFuente(fonClass2);
     titulo.classList.add('font__style-font2');
     subtitulo.classList.add('font__style-font2');
-    for (var i = 0; i < skills.length; i++) {
-      skills[i].classList.add('font__style-font2');
+    for (let itemFonts of skills) {
+      console.log('${itemFonts}');
+      itemFonts.classList.add('font__style-font2');
     }
 
   }
   if (id.id === font3) {
   
-      var fonClass3 = 'font__style-font3';
+      const fonClass3 = 'font__style-font3';
       eliminaFuente(fonClass3);
     titulo.classList.add('font__style-font3');
     subtitulo.classList.add('font__style-font3');
-    for (var i = 0; i < skills.length; i++) {
-      skills[i].classList.add('font__style-font3');
+    for (let itemFonts of skills) {
+      itemFonts.classList.add('font__style-font3');
     }
 
   }
   if (id.id === font4) {
    
-    var fonClass4 = 'font__style-font4';
+    const fonClass4 = 'font__style-font4';
     eliminaFuente(fonClass4);
     titulo.classList.add('font__style-font4');
     subtitulo.classList.add('font__style-font4');
-    for (var i = 0; i < skills.length; i++) {
-      skills[i].classList.add('font__style-font4');
+    for (let itemFonts of skills) {
+      itemFonts.classList.add('font__style-font4');
     }
 
   }
 }
 
-function eliminaFuente(font) {
+const eliminaFuente = (font) => {
 
 console.log("eliminar ", font);
 
@@ -119,13 +120,13 @@ console.log("eliminar ", font);
   subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
   titulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
   subtitulo.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
-   for (var i = 0; i < skills.length; i++) {
-     skills[i].classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
+   for (let itemSkills of skills) {
+     itemSkills.classList.remove('font__style-font1', 'font__style-font2', 'font__style-font3', 'font__style-font4');
    }
 
 }
 
 
-for (var i = 0; i < radioFonts.length; i++) {
-  radioFonts[i].addEventListener('click', seleccionFuente);
+for (let itemRadioFonts of radioFonts) {
+  itemRadioFonts.addEventListener('click', seleccionFuente);
 }

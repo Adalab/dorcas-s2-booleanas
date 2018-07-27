@@ -1,13 +1,11 @@
 'use strict';
 
-
-
-var contenedor = document.querySelector('.label--stuffed__container-select');
-var btn = document.querySelectorAll('.btn-select');
-var contador = 1;
-var minus = '<i class="fas fa-minus"></i>';
-var plus = '<i class="fas fa-plus"></i>';
-var itemUl = document.querySelector('.card__skills');
+let contenedor = document.querySelector('.label--stuffed__container-select');
+const btn = document.querySelectorAll('.btn-select');
+let contador = 1;
+const minus = '<i class="fas fa-minus"></i>';
+const plus = '<i class="fas fa-plus"></i>';
+//const itemUl = document.querySelector('.card__skills');
 
 
 
@@ -16,73 +14,16 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
     return response.json();
   })
   .then(function (json) {
-    var skills = [];
-    for (var i = 0; i < json.skills.length; i++) {
+    const skills = [];
 
-      skills[i] = json.skills[i];
-
+    for (let skillItem of json.skills) {
+      skills.push(skillItem);
     }
 
+    const añadeSelect = (e) => {
 
-    function actualizaTarjeta() {
-
-      var listSelects = document.querySelectorAll('.skills--stuffed');
-      var spans = document.querySelectorAll('.icon__text');
-
-      spans.innerHTML = '';
-
-      for (var i = 0; i < listSelects.length; i++) {
-        spans[i].innerHTML = '';
-        spans[i].innerHTML = listSelects[i].value;
-      }
-
-    }
-
-    function creaSelect() {
-
-      var newSelect = document.createElement('select');
-      newSelect.classList.add('skills--stuffed');
-
-      var newBtn = document.createElement('button');
-      newBtn.classList.add('btn-select');
-
-      var newIcon = document.createElement('i');
-      newIcon.classList.add('fas');
-      newIcon.classList.add('fa-plus');
-
-      newBtn.appendChild(newIcon);
-
-      var container = document.createElement('div');
-
-      for (var i = 0; i < skills.length; i++) {
-        var newOption = document.createElement('option');
-        var optionText = document.createTextNode(skills[i]);
-        newOption.appendChild(optionText);
-        newSelect.appendChild(newOption);
-        container.classList.add('container-select');
-        container.appendChild(newSelect);
-        container.appendChild(newBtn);
-        contenedor.appendChild(container);
-      }
-
-      newSelect.addEventListener('change', actualizaTarjeta);
-
-      return newSelect;
-
-    }
-
-    function borraSelect() {
-      contenedor = document.querySelector('.label--stuffed__container-select');
-      contenedor.removeChild(contenedor.lastChild);
-      contador--;
-      //actualizaTarjeta();
-    }
-
-
-    function añadeSelect(e) {
-
-      var boton = e.currentTarget;
-      console.log("e ", boton);
+      const boton = e.currentTarget;
+      console.log('e', boton);
       console.log(boton.firstChild.className);
 
       if (boton.firstChild.className === 'fas fa-plus') {
@@ -97,26 +38,68 @@ fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/s
         borraSelect();
         botones(btn);
       }
+    };
 
-
-    }
-
-    function botones(btn) {
+    const botones = (btn) => {
 
       btn = document.querySelectorAll('.btn-select');
-      for (var i = 0; i < btn.length; i++) {
 
-        btn[i].addEventListener('click', añadeSelect);
-
+      for (const button of btn) {
+        button.addEventListener('click', añadeSelect);
       }
       console.log(btn.length);
-    }
+    };
 
+    const actualizaTarjeta = () => {
 
+      const listSelects = document.querySelectorAll('.skills--stuffed');
+      const spans = document.querySelectorAll('.icon__text');
+
+      spans.innerHTML = '';
+
+      for (let i = 0; i < listSelects.length; i++) {
+        spans[i].innerHTML = '';
+        spans[i].innerHTML = listSelects[i].value;
+      }
+    };
+
+    const creaSelect = () => {
+
+      const newSelect = document.createElement('select');
+      newSelect.classList.add('skills--stuffed');
+
+      const newBtn = document.createElement('button');
+      newBtn.classList.add('btn-select');
+
+      const newIcon = document.createElement('i');
+      newIcon.classList.add('fas');
+      newIcon.classList.add('fa-plus');
+
+      newBtn.appendChild(newIcon);
+
+      const container = document.createElement('div');
+
+      for (const skill of skills) {
+        const newOption = document.createElement('option');
+        const optionText = document.createTextNode(skill);
+        newOption.appendChild(optionText);
+        newSelect.appendChild(newOption);
+        container.classList.add('container-select');
+        container.appendChild(newSelect);
+        container.appendChild(newBtn);
+        contenedor.appendChild(container);
+      }
+
+      newSelect.addEventListener('change', actualizaTarjeta);
+
+      return newSelect;
+    };
+
+    const borraSelect = () => {
+      contenedor = document.querySelector('.label--stuffed__container-select');
+      contenedor.removeChild(contenedor.lastChild);
+      contador--;
+    };
     creaSelect();
     botones();
-
-
-
-
   });
